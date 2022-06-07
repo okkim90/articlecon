@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>플레이콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content" class="sub_m">
+            <header id="header" class="sub_header">
+                <a href="" class="btn_back"><span class="blind">뒤로가기</span></a>
+                <h1 class="tit"><span class="blind">어린이과학동아&수학동아</span> 두근두근 인기투표</h1>
+            </header>
+            <div id="container" class="sub_m">
+                <div class="sub_wrap pt0">
+                    <div class="sub_inner">
+                        <div class="sub_vote_top">
+                            <div class="txt_box pl0">
+                                <span class="status ended">마감</span>
+                                <strong class="tit fc_blue">2022년 04월 15일 08호</strong>
+                                <div class="sub_vote_desc">
+                                    가장 재미있게 본 만화와 기사를 3개씩 뽑아 주세요! (투표는 한 번만 가능합니다!)
+                                </div>
+                                <p class="period_box">
+                                    <strong class="period_box_tit">투표기간 : </strong>
+                                    <span class="period_box_cont">2022.05.22 ~ 2022.05.31</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sub_vote_set ended">
+                            <strong class="sub_vote_set_tit fc_blue">투표1</strong>
+                            <div class="sub_vote_set_desc">
+                                이번 호에서 가장 재미있게 본 만화를 3개를 골라 V표 해 주세요.
+                            </div>
+                            <!--
+                                [DEV]
+                                checklist_limit 의 data-limit 값 = checkbox_limit 최대 체크 수
+                            -->
+                            <div class="sub_vote_set_cont">
+                                <ul class="sub_vote_set_list progress_wrap no_drag">
+                                    <li>
+                                        <p class="sub_vote_item_txt">오싹오싹! 과학자 한풀이 대작전</p>
+                                        <div class="progress" data-val="45">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">솔이와 옥희의 잃어버린 몸을 찾아서</p>
+                                        <div class="progress" data-val="62">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">도롱이랑 우리랑 지구사랑탐사대</p>
+                                        <div class="progress" data-val="129">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">야구왕 허슬기</p>
+                                        <div class="progress" data-val="45">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">좌충우돌 천문대</p>
+                                        <div class="progress" data-val="52">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub_vote_set ended">
+                            <strong class="sub_vote_set_tit fc_blue">투표2</strong>
+                            <div class="sub_vote_set_desc">
+                                이번 호에서 가장 재미있게 본 만화를 2개를 골라 V표 해 주세요.
+                            </div>
+                            <!--
+                                [DEV]
+                                checklist_limit 의 data-limit 값 = checkbox_limit 최대 체크 수
+                            -->
+                            <div class="sub_vote_set_cont">
+                                <ul class="sub_vote_set_list progress_wrap  no_drag">
+                                    <li>
+                                        <p class="sub_vote_item_txt">기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 </p>
+                                        <div class="progress" data-val="165">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">기사 기사 기사 기사 기사 기사 기사 기사 </p>
+                                        <div class="progress" data-val="92">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 기사 </p>
+                                        <div class="progress" data-val="141">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">기사 기사 기사 기사 기사 기사 기사 기사 </p>
+                                        <div class="progress" data-val="229">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="sub_vote_item_txt">기사 기사 기사 기사 기사 기사 기사 기사 </p>
+                                        <div class="progress" data-val="1029">
+                                            <span class="bar"></span>
+                                            <span class="vote_count"></span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sub_vote_set ended">
+                            <strong class="sub_vote_set_tit fc_blue">투표3</strong>
+                            <div class="sub_vote_set_desc">
+                                어과동 편집부에 궁금했던 것을 무엇이든 질문해 주세요. <br> '질문하면 답해줌' 코너에서 정성껏 알려드립니다.
+                            </div>
+                        </div>
+                        <div class="btn_area taC ty_bot2">
+                            <a href="" class="btn_list w100">목록보기</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+        //audio_player
+        audio_player 클래스
+        노출, 비노출 : on
+        축소 : minimal
+        확장 : maximal
+    -->
+    <div class="audio_player maximal">
+        <div class="audio-player">
+            <!--
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            -->
+
+
+            <div class="full_tit">
+                <button class="btn_toggle_size btn_minimal" onclick="player_min();"><span class="blind">축소</span></button>
+                <h2 id="audio_tit" class="full_tit_txt ellipsis4">재생중인 오디오가 없습니다.</h2>
+            </div>
+            <div class="slider_wrap">
+                <div class="slider">
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="marquee_tit">
+                    <marquee id="marquee" >
+                        <div class="marquee_inner">
+                            재생중인 오디오가 없습니다.
+                        </div>
+                    </marquee>
+                </div >
+
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="length">0:00</div>
+                </div>
+
+
+                <div class="control_box">
+                    <button onclick="rewindAudio()" class="control_box_btns btn_rewind"><span class="blind">rewind</span><span class="sec">-15</span><span class="blind">sec</span></button>
+                    <div class="player_btn play"></div>
+                    <button onclick="forwardAudio()" class="control_box_btns btn_forward"><span class="blind">forward</span><span class="sec">+15</span><span class="blind">sec</span></button>
+                </div>
+                <div class="controls_bot">
+                    <div class="controls_bot_left">
+                        <div class="speed_ctrl">
+                            <strong class="blind">재생속도</strong>
+                            <select name="" id="" onchange="speed(this)">
+                                <option value="0.25">X 0.25</option>
+                                <option value="0.5">X 0.5</option>
+                                <option value="0.75">X 0.75</option>
+                                <option value="1" selected>X 1.00</option>
+                                <option value="1.25">X 1.25</option>
+                                <option value="1.5">X 1.5</option>
+                                <option value="1.75">X 1.75</option>
+                                <option value="2">X 2.00</option>
+                            </select>
+                        </div>
+                        <div class="volume-container">
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                            <div class="volume-button">
+                                <i class="volume fa-solid fa-volume-high"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn_article">기사 보러가기</a>
+                </div>
+                <button class="btn_toggle_size btn_maximal" onclick="player_max();">
+                    <span class="blind">확장</span>
+                </button>
+            </div>
+            <label class="btn_like">
+                <input type="checkbox" id="audio_like" class="btn_like_chk">
+                <i class="ico_like"></i>
+                <span class="blind">좋아요</span>
+            </label>
+        </div>
+    </div>
+    <script src="./common/js/audio_ssok.js"></script>
+    <!-- //audio_player -->
+</body>
+</html>

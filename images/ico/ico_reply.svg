@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g data-name="합치기 12" style="fill:none">
+        <path d="M-238 1868v-10a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-11.25l-3.75 3z" style="stroke:none" transform="translate(238 -1856)"/>
+        <path d="m-237 1869.92 2.4-1.92h11.6v-10h-14v11.92m-1 2.08v-14a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-11.25l-3.75 3z" style="fill:#fff;stroke:none" transform="translate(238 -1856)"/>
+    </g>
+    <circle data-name="타원 239" cx="1" cy="1" r="1" transform="translate(3 6)" style="fill:#fff"/>
+    <circle data-name="타원 240" cx="1" cy="1" r="1" transform="translate(7 6)" style="fill:#fff"/>
+    <circle data-name="타원 241" cx="1" cy="1" r="1" transform="translate(11 6)" style="fill:#fff"/>
+</svg>

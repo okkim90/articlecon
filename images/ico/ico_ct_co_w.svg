@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+    <g data-name="Icon material-chat-bubble" style="fill:none">
+        <path d="M10.2 3H3.8a.8.8 0 0 0-.8.8V11l1.6-1.6h5.6a.8.8 0 0 0 .8-.8V3.8a.8.8 0 0 0-.8-.8z" style="stroke:none" transform="translate(-3 -3)"/>
+        <path d="M4 4v4.586l.186-.186H10V4H4m-.2-1h6.4c.44 0 .8.36.8.8v4.8c0 .44-.36.8-.8.8H4.6L3 11V3.8c0-.44.36-.8.8-.8z" style="fill:#fff;stroke:none" transform="translate(-3 -3)"/>
+    </g>
+</svg>

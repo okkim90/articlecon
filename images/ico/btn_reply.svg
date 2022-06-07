@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="11" height="8.25" viewBox="0 0 11 8.25">
+    <g>
+        <g data-name="Icon material-chat-bubble" style="fill:none">
+            <path d="M13.175 3h-9.35A.827.827 0 0 0 3 3.825v7.425L4.65 9.6h8.525A.827.827 0 0 0 14 8.775v-4.95A.827.827 0 0 0 13.175 3z" style="stroke:none" transform="translate(-3 -3)"/>
+            <path d="M4 4v4.836l.236-.236H13V4H4m-.175-1h9.35c.454 0 .825.371.825.825v4.95a.827.827 0 0 1-.825.825H4.65L3 11.25V3.825C3 3.371 3.371 3 3.825 3z" style="fill:#fff;stroke:none" transform="translate(-3 -3)"/>
+        </g>
+        <circle data-name="타원 239" cx=".5" cy=".5" r=".5" transform="translate(3 3)" style="fill:#fff"/>
+        <circle data-name="타원 242" cx=".5" cy=".5" r=".5" transform="translate(5 3)" style="fill:#fff"/>
+        <circle data-name="타원 243" cx=".5" cy=".5" r=".5" transform="translate(7 3)" style="fill:#fff"/>
+    </g>
+</svg>

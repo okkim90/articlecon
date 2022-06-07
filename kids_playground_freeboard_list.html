@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>플레이콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <header id="header" class="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1 class="logo">
+                            <a href="">
+                                <span class="blind">플레이콘</span>
+                                <img src="./images/common/logo.png" alt="플레이콘">
+                            </a>
+                        </h1>
+                        <div class="header_util">
+                            <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                            <!--로그아웃 상태-->
+                            <button type="button" class="btn_sign ty_logout">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그인</span>
+                            </button>
+                            <!--// 로그아웃 상태-->
+                            <!-- 로그인 상태-->
+                            <!--
+                            <button type="button" class="btn_sign ty_login">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그아웃</span>
+                            </button>
+                            -->
+                            <!--// 로그인 상태-->
+
+                            <!-- 햄버거버튼 삭제
+                            <button type="button" class="btn_lm">
+                                <span class="blind">전체메뉴</span>
+                                <div class="bar_box">
+                                    <span class="bar top"></span>
+                                    <span class="bar mid"></span>
+                                    <span class="bar bot"></span>
+                                </div>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_area">
+                    <nav id="nav" class="nav">
+                        <ul class="nav_list">
+                            <li><a href=""><span>어과동</span></a></li>
+                            <li><a href=""><span>어수동</span></a></li>
+                            <li><a href=""><span>오디오쏙</span></a></li>
+                            <li><a href=""><span>어과수TV</span></a></li>
+                            <li class="on"><a href=""><span>놀이터</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <div id="container" class="sub_m ">
+                <div class="menu_dep2 ">
+                    <ul class="menu_dep2_list">
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link ">어린이과학동아</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link ">어린이수학동아</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link on">자유게시판</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_wrap">
+                    <div class="sub_inner">
+                        <div class="list_top_btns clearfix">
+                            <div class="btn_box fr"><a href="" class="btn_s_mid">글 작성하기</a></div>
+                        </div>
+                        <ul class="pp_list ty_freeboard">
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp_list_thumb">
+                                        <div class="sc_thumb">
+                                            <div class="sc_thumb_img">
+                                                <img src="./images/common/sample3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 =</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 오로치마루기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp_list_thumb">
+                                        <div class="sc_thumb">
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 오로치마루기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp_list_thumb">
+                                        <div class="sc_thumb">
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 오로치마루기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </li>
+                            <li class="pp_list_item">
+                                <a href="" class="pp_list_link">
+                                    <div class="pp_list_txt">
+                                        <h2 class="tit ellipsis1"><span class="sc_ico new">N</span>[특집] 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학 후후 불어서 펑! 터질 때까지 비눗방울의 과학 까지 비눗방울의 과학 까지 비눗방울의 과학</h2>
+                                        <div class="writer_set">
+                                            <div class="writer_set_thumb">
+                                                <img src="./images/common/sample.jpg" alt="">
+                                            </div>
+                                            <div class="writer_set_txt">
+                                                <div class="writer_set_info">
+                                                    <span class="name">오로치마루 오로치마루기자</span>
+                                                    <span class="level lv4" >
+                                                        <span class="level_arrow"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list_item_info">
+                                            <span class="date">
+                                                2022.03.10
+                                            </span>
+                                            <div class="sc_thumb_info">
+                                                <span class="sc_thumb_info_item ct_like">224</span>
+                                                <span class="sc_thumb_info_item ct_co">552</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pp_list_thumb">
+                                        <div class="sc_thumb">
+                                            <div class="sc_thumb_img">
+                                                <img src="https://picsum.photos/1600/900" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn_area ty_bot">
+                            <button class="btn_plus ty_grey">
+                                <i></i> 더 보기
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <footer id="footer" class="footer">
+                <ul class="footer_menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                </ul>
+                <div class="footer_policy">
+                    <h2 class="footer_policy_tit">
+                        <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                    </h2>
+                    <div class="txt_box">
+                        ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                        개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                        서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
+                    </div>
+                </div>
+                <p class="copy">Copyright © Dongascience. All right reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <!--
+        //audio_player
+        audio_player 클래스
+        노출, 비노출 : on
+        축소 : minimal
+        확장 : maximal
+    -->
+    <div class="audio_player maximal">
+        <div class="audio-player">
+            <!--
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            -->
+
+
+            <div class="full_tit">
+                <button class="btn_toggle_size btn_minimal" onclick="player_min();"><span class="blind">축소</span></button>
+                <h2 id="audio_tit" class="full_tit_txt ellipsis4">재생중인 오디오가 없습니다.</h2>
+            </div>
+            <div class="slider_wrap">
+                <div class="slider">
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="marquee_tit">
+                    <marquee id="marquee" >
+                        <div class="marquee_inner">
+                            재생중인 오디오가 없습니다.
+                        </div>
+                    </marquee>
+                </div >
+
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="length">0:00</div>
+                </div>
+
+
+                <div class="control_box">
+                    <button onclick="rewindAudio()" class="control_box_btns btn_rewind"><span class="blind">rewind</span><span class="sec">-15</span><span class="blind">sec</span></button>
+                    <div class="player_btn play"></div>
+                    <button onclick="forwardAudio()" class="control_box_btns btn_forward"><span class="blind">forward</span><span class="sec">+15</span><span class="blind">sec</span></button>
+                </div>
+                <div class="controls_bot">
+                    <div class="controls_bot_left">
+                        <div class="speed_ctrl">
+                            <strong class="blind">재생속도</strong>
+                            <select name="" id="" onchange="speed(this)">
+                                <option value="0.25">X 0.25</option>
+                                <option value="0.5">X 0.5</option>
+                                <option value="0.75">X 0.75</option>
+                                <option value="1" selected>X 1.00</option>
+                                <option value="1.25">X 1.25</option>
+                                <option value="1.5">X 1.5</option>
+                                <option value="1.75">X 1.75</option>
+                                <option value="2">X 2.00</option>
+                            </select>
+                        </div>
+                        <div class="volume-container">
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                            <div class="volume-button">
+                                <i class="volume fa-solid fa-volume-high"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn_article">기사 보러가기</a>
+                </div>
+                <button class="btn_toggle_size btn_maximal" onclick="player_max();">
+                    <span class="blind">확장</span>
+                </button>
+            </div>
+            <label class="btn_like">
+                <input type="checkbox" id="audio_like" class="btn_like_chk">
+                <i class="ico_like"></i>
+                <span class="blind">좋아요</span>
+            </label>
+        </div>
+
+    </div>
+</body>
+</html>

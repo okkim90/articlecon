@@ -1,0 +1,30 @@
+.paging {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_list {
+        margin: 0 10px;
+        li {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    &_btn {
+        display: block;
+        width: 20px;
+        height: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        color: #eee;
+        &.current {
+            font-weight: bold;
+        }
+        &.ty_ctrl {
+            background-color: map-get($colors, blue);
+            & + .paging_btn.ty_ctrl {
+                margin-left: 5px;
+            }
+        }
+    }
+}

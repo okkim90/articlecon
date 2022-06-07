@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.716" height="27.8" viewBox="0 0 30.716 27.8">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ico_mem" transform="translate(-1489.641 -46.752)">
+    <path id="패스_429" data-name="패스 429" class="cls-1" d="M777,362.267a13.937,13.937,0,0,0-2.389-3.156,16.929,16.929,0,0,0-22.706-.489,14.115,14.115,0,0,0-2.9,3.645" transform="translate(742 -289.073)"/>
+    <path id="패스_430" data-name="패스 430" class="cls-1" d="M7.278,14.055a6.778,6.778,0,1,1,6.778-6.778A6.785,6.785,0,0,1,7.278,14.055Z" transform="translate(1497.725 47.252)"/>
+  </g>
+</svg>

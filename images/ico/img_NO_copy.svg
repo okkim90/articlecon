@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91" height="91" viewBox="0 0 91 91">
+    <g transform="translate(14.5 11.589)">
+        <path data-name="패스 561" d="M6 12.267S20.3 11.2 28 6.91c7.7 4.285 22 5.357 22 5.357V22.98a34.79 34.79 0 0 1-22 33.21A34.79 34.79 0 0 1 6 22.98z" transform="translate(3 3)" style="stroke-width:3px;stroke-miterlimit:10;fill:none;stroke:#5e25c7"/>
+        <path data-name="패스 562" d="M55.3 36.4a88.278 88.278 0 0 0 9.9 1.868v6.993c0 9.6-3.24 17.517-9.631 23.529a32.167 32.167 0 0 1-7.969 5.497 32.235 32.235 0 0 1-8.227-5.736C33.155 62.565 30 54.731 30 45.263V38.27c4.519-.6 11.915-1.9 17.6-4.463a47.541 47.541 0 0 0 7.7 2.6" transform="translate(-16.6 -19.497)" style="stroke-miterlimit:10;fill:none;stroke:#5e25c7"/>
+        <circle data-name="타원 261" cx="9.9" cy="9.9" r="9.9" transform="translate(21.1 23.11)" style="stroke-width:2px;stroke-miterlimit:10;fill:none;stroke:#5e25c7"/>
+        <path data-name="패스 563" d="M112.7 111.288a4.278 4.278 0 1 0 0 5.134" transform="translate(-77.849 -80.845)" style="stroke-width:2px;stroke-miterlimit:10;fill:none;stroke:#5e25c7"/>
+        <path data-name="합치기 20" d="M4855 7047a45 45 0 1 1 45 45 45 45 0 0 1-45-45zm7.182 0a37.82 37.82 0 0 0 62.766 28.423l-54.823-51.621a37.536 37.536 0 0 0-7.943 23.198zm67.693 23.2a37.822 37.822 0 0 0-54.823-51.622z" transform="translate(-4869 -7013.09)" style="fill:#5e25c7;stroke:transparent;opacity:.1;stroke-miterlimit:10"/>
+    </g>
+</svg>

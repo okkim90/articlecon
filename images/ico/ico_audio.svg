@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+    <g data-name="Icon feather-headphones">
+        <path data-name="패스 589" d="M4.5 17.833V12.5a8 8 0 1 1 16 0v5.333" transform="translate(-3.5 -3.5)" style="fill:none;stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        <path data-name="패스 590" d="M20.5 25.444a1.778 1.778 0 0 1-1.778 1.778h-.889a1.778 1.778 0 0 1-1.778-1.778v-2.666A1.778 1.778 0 0 1 17.833 21H20.5zm-16 0a1.778 1.778 0 0 0 1.778 1.778h.889a1.778 1.778 0 0 0 1.778-1.778v-2.666A1.778 1.778 0 0 0 7.167 21H4.5z" transform="translate(-3.5 -10.223)" style="fill:none;stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+    </g>
+</svg>

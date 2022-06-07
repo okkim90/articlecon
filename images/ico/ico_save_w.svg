@@ -1,0 +1,8 @@
+<svg data-name="Icon feather-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g data-name="패스 418" style="fill:none;stroke-linecap:round;stroke-linejoin:round">
+        <path d="M25.833 28.5H7.167A2.667 2.667 0 0 1 4.5 25.833V7.167A2.667 2.667 0 0 1 7.167 4.5h14.666l6.667 6.667v14.666a2.667 2.667 0 0 1-2.667 2.667z" style="stroke:none" transform="translate(-4.5 -4.5)"/>
+        <path d="M25.833 27.5c.92 0 1.667-.748 1.667-1.667V11.581L21.42 5.5H7.166c-.92 0-1.667.748-1.667 1.667v18.666c0 .92.748 1.667 1.667 1.667h18.666m0 1H7.167A2.667 2.667 0 0 1 4.5 25.833V7.167A2.667 2.667 0 0 1 7.167 4.5h14.666l6.667 6.667v14.666a2.667 2.667 0 0 1-2.667 2.667z" style="fill:#fff;stroke:none" transform="translate(-4.5 -4.5)"/>
+    </g>
+    <path data-name="패스 420" d="M10.5 4.5v6h13" transform="translate(-5 -4)" style="stroke:#fff;fill:none;stroke-linecap:round;stroke-linejoin:round"/>
+    <path data-name="제외 4" d="M12 13H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2zM2 6v1h4V6zm0-2v1h7V4zm0-2v1h10V2z" transform="translate(5 11)" style="fill:#fff"/>
+</svg>

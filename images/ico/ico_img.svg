@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26.288" viewBox="0 0 26 26.288">
+    <g data-name="사각형 1659" style="stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none">
+        <path style="stroke:none" d="M0 0h26v26H0z"/>
+        <path style="fill:none" d="M1 1h24v24H1z"/>
+    </g>
+    <path data-name="패스 1841" d="m3.971 41.561 5.594-3.619 11.187 10.529" transform="translate(-1.588 -23.597)" style="stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+    <path data-name="패스 1842" d="m37.577 47.014 4.73-3.249 5.923 5.183" transform="translate(-23.802 -27.446)" style="stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+    <circle data-name="타원 280" cx="2.034" cy="2.034" transform="translate(6.121 6.567)" style="stroke:#1e90ff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none" r="2.034"/>
+</svg>

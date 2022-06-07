@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>플레이콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content" class="sub_m">
+            <header id="header" class="sub_header">
+                <a href="" class="btn_back"><span class="blind">뒤로가기</span></a>
+                <h1 class="tit"><span class="blind">어린이과학동아&수학동아</span> 연재만화</h1>
+            </header>
+            <div id="container" class="sub_m">
+                <div class="sub_wrap pt0">
+                    <div class="vp_area sub_inner">
+                        <div class="vp_tit_area ty_webtoon">
+                            <strong class="vp_tit_sub">솔이와 옥희의 잃어버린 몸을 찾아서</strong>
+                            <h2 class="vp_tit">제 39화  ‘우울해! 슬퍼!’ 아린이가 이상해?</h2>
+                            <label class="btn_like_b">
+                                <input type="checkbox" class="btn_like_chk">
+                                <i class="ico_like"></i>
+                                <span class="blind">좋아요</span>
+                            </label>
+                        </div>
+                        <div class="vp_cont_area">
+                            <div class="vp_cont taC">
+                                <img src="./images/common/sample2.jpg" alt="">
+                                <img src="./images/common/sample.jpg" alt="">
+                                <img src="./images/common/sample3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="vp_btn_area taC">
+                            <button class="btn_epi_list" onclick="open_popup(this)" data-popup="popup_epi"><span>만화 목록 선택</span></button>
+                        </div>
+                    </div>
+                    <hr class="sep_bar">
+                    <div class="comments_wrap">
+
+                        <div class="write_comment">
+                            <div class="comments_wrap_top">
+                                <span class="amount">댓글 <b class="fc_blue">14</b></span>
+                                <label class="sc_check no_drag"><input type="checkbox" onchange="check_pw(this)"> 비밀댓글</label>
+                                <input type="password" class="input_ty1 input_pw" style="display:none">
+                            </div>
+                            <script>
+                                function check_pw(target){
+                                    var $this = $(target);
+                                    var $pw_box = $this.parents('.comments_wrap_top').find('.input_pw');
+                                    if($this.is(":checked")){
+                                        $pw_box.show();
+                                    }else{
+                                        $pw_box.hide();
+                                    }
+                                }
+                            </script>
+                            <div class="txt_area">
+                                <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                <div class="txt_area_bot">
+                                    <div class="select_sticker">
+                                        <button type="button" class="toggle_tab">스티커</button>
+                                        <div class="tabs">
+                                            <div class="tab_btns">
+                                                <button type="button" class="tab_btn on">레벨스티커</button>
+                                                <button type="button" class="tab_btn">독자티콘</button>
+                                            </div>
+                                            <div class="stickers">
+                                                <div class="sticker_set on">
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                </div>
+                                                <div class="sticker_set">
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                    <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn_apply">댓글달기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_set">
+                            <div class="comment_origin">
+                                <div class="comment_area_top">
+                                    <div class="user_info">
+                                        <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                        <div class="user_info_txt">
+                                            <div class="user_info_top">
+                                                <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                <span class="level lv4" style="background-color: #b6ce00;">
+                                                    <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                    레벨 <b>4</b>
+                                                </span>
+                                            </div>
+                                            <span class="user_info_date">2022.03.10 00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="utils">
+                                        <button type="button" class="btn_like">
+                                            <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                            <span class="count">61231235</span>
+                                        </button>
+                                        <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="comment_area_cont">
+                                    <span class="emo_box">
+                                        <img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt="">
+                                    </span>
+                                    이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                </div>
+                                <div class="comment_area_bot">
+                                    <button type="button" class="comment_area_bot_btn btn_reply">답글 <span class="count">3</span></button>
+                                </div>
+                            </div>
+                            <div class="comment_reply on">
+                                <div class="txt_area">
+                                    <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                    <div class="txt_area_bot">
+                                        <div class="select_sticker">
+                                            <button type="button" class="toggle_tab">스티커</button>
+                                            <div class="tabs">
+                                                <div class="tab_btns">
+                                                    <button type="button" class="tab_btn on">레벨스티커</button>
+                                                    <button type="button" class="tab_btn">독자티콘</button>
+                                                </div>
+                                                <div class="stickers">
+                                                    <div class="sticker_set on">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="sticker_set">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_apply">댓글달기</button>
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #ecb000;">
+                                                        <span class="level_arrow" style="border-top-color: #ecb000;"></span>
+                                                        레벨 <b>3</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">6123</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #b6ce00;">
+                                                        <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">61</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #e74c3c;">
+                                                        <span class="level_arrow" style="border-top-color: #e74c3c;"></span>
+                                                        레벨 <b>1</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">6</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+                                        <span class="emo_box">
+                                            <img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt="">
+                                        </span>
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_set">
+                            <div class="comment_origin">
+                                <div class="comment_area_top">
+                                    <div class="user_info">
+                                        <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                        <div class="user_info_txt">
+                                            <div class="user_info_top">
+                                                <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                <span class="level lv4" style="background-color: #b6ce00;">
+                                                    <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                    레벨 <b>4</b>
+                                                </span>
+                                            </div>
+                                            <span class="user_info_date">2022.03.10 00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="utils">
+                                        <button type="button" class="btn_like">
+                                            <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                            <span class="count">61231235</span>
+                                        </button>
+                                        <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="comment_area_cont">
+                                    <span class="emo_box">
+                                        <img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt="">
+                                    </span>
+                                    이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                </div>
+                                <div class="comment_area_bot">
+                                    <button type="button" class="comment_area_bot_btn btn_reply">답글 <span class="count">3</span></button>
+                                </div>
+                            </div>
+                            <div class="comment_reply">
+                                <div class="txt_area">
+                                    <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                    <div class="txt_area_bot">
+                                        <div class="select_sticker">
+                                            <button type="button" class="toggle_tab">스티커</button>
+                                            <div class="tabs">
+                                                <div class="tab_btns">
+                                                    <button type="button" class="tab_btn on">레벨스티커</button>
+                                                    <button type="button" class="tab_btn">독자티콘</button>
+                                                </div>
+                                                <div class="stickers">
+                                                    <div class="sticker_set on">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="sticker_set">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_apply">댓글달기</button>
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #ecb000;">
+                                                        <span class="level_arrow" style="border-top-color: #ecb000;"></span>
+                                                        레벨 <b>3</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">6123</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #b6ce00;">
+                                                        <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                        레벨 <b>4</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">61</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+                                        <span class="emo_box">
+                                            <img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt="">
+                                        </span>
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                                <div class="comment_reply_item">
+                                    <div class="comment_area_top">
+                                        <div class="user_info">
+                                            <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                            <div class="user_info_txt">
+                                                <div class="user_info_top">
+                                                    <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                    <span class="level lv4" style="background-color: #e74c3c;">
+                                                        <span class="level_arrow" style="border-top-color: #e74c3c;"></span>
+                                                        레벨 <b>1</b>
+                                                    </span>
+                                                </div>
+                                                <span class="user_info_date">2022.03.10 00:00</span>
+                                            </div>
+                                        </div>
+                                        <div class="utils">
+                                            <button type="button" class="btn_like">
+                                                <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                                <span class="count">6</span>
+                                            </button>
+                                            <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                        </div>
+                                    </div>
+                                    <div class="comment_area_cont">
+
+                                        이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_set">
+                            <div class="comment_origin">
+                                <div class="comment_area_top">
+                                    <div class="user_info">
+                                        <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                        <div class="user_info_txt">
+                                            <div class="user_info_top">
+                                                <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                <span class="level lv4" style="background-color: #b6ce00;">
+                                                    <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                    레벨 <b>4</b>
+                                                </span>
+                                            </div>
+                                            <span class="user_info_date">2022.03.10 00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="utils">
+                                        <button type="button" class="btn_like">
+                                            <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                            <span class="count">61231235</span>
+                                        </button>
+                                        <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="comment_area_cont">
+                                    <div class="secret_cont">작성자만 볼 수 있는 댓글 입니다.</div>
+                                </div>
+                                <div class="comment_area_bot">
+                                    <button type="button" class="comment_area_bot_btn btn_reply">답글 <span class="count">0</span></button>
+                                </div>
+                            </div>
+                            <div class="comment_reply">
+                                <div class="txt_area">
+                                    <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                    <div class="txt_area_bot">
+                                        <div class="select_sticker">
+                                            <button type="button" class="toggle_tab">스티커</button>
+                                            <div class="tabs">
+                                                <div class="tab_btns">
+                                                    <button type="button" class="tab_btn on">레벨스티커</button>
+                                                    <button type="button" class="tab_btn">독자티콘</button>
+                                                </div>
+                                                <div class="stickers">
+                                                    <div class="sticker_set on">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="sticker_set">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_apply">댓글달기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_set">
+                            <div class="comment_origin">
+                                <div class="comment_area_top">
+                                    <div class="user_info">
+                                        <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                        <div class="user_info_txt">
+                                            <div class="user_info_top">
+                                                <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                <span class="level lv4" style="background-color: #b6ce00;">
+                                                    <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                    레벨 <b>4</b>
+                                                </span>
+                                            </div>
+                                            <span class="user_info_date">2022.03.10 00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="utils">
+                                        <button type="button" class="btn_like">
+                                            <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                            <span class="count">61231235</span>
+                                        </button>
+                                        <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="comment_area_cont">
+                                    <span class="emo_box">
+                                        <img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt="">
+                                    </span>
+                                    이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                </div>
+                                <div class="comment_area_bot">
+                                    <button type="button" class="comment_area_bot_btn btn_reply">답글 <span class="count">0</span></button>
+                                </div>
+                            </div>
+                            <div class="comment_reply">
+                                <div class="txt_area">
+                                    <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                    <div class="txt_area_bot">
+                                        <div class="select_sticker">
+                                            <button type="button" class="toggle_tab">스티커</button>
+                                            <div class="tabs">
+                                                <div class="tab_btns">
+                                                    <button type="button" class="tab_btn on">레벨스티커</button>
+                                                    <button type="button" class="tab_btn">독자티콘</button>
+                                                </div>
+                                                <div class="stickers">
+                                                    <div class="sticker_set on">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="sticker_set">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_apply">댓글달기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_set">
+                            <div class="comment_origin">
+                                <div class="comment_area_top">
+                                    <div class="user_info">
+                                        <div class="user_info_thumb"><img src="./images/common/sample.jpg" alt=""></div>
+                                        <div class="user_info_txt">
+                                            <div class="user_info_top">
+                                                <strong class="user_info_id">뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝뀨니닝</strong>
+                                                <span class="level lv4" style="background-color: #b6ce00;">
+                                                    <span class="level_arrow" style="border-top-color: #b6ce00;"></span>
+                                                    레벨 <b>4</b>
+                                                </span>
+                                            </div>
+                                            <span class="user_info_date">2022.03.10 00:00</span>
+                                        </div>
+                                    </div>
+                                    <div class="utils">
+                                        <button type="button" class="btn_like">
+                                            <img src="./images/ico/ico_thumb.svg" alt="추천하기">
+                                            <span class="count">61231235</span>
+                                        </button>
+                                        <button type="button" class="btn_report"><span class="blind">신고하기</span></button>
+                                    </div>
+                                </div>
+                                <div class="comment_area_cont">
+                                    <span class="emo_box">
+                                        <img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt="">
+                                    </span>
+                                    이날 푸틴 대통령의 선포는 미국 뉴욕시 유엔본부에서 유엔 안전보장이사회 긴급회의가 열린 직후 나왔다.
+                                </div>
+                                <div class="comment_area_bot">
+                                    <button type="button" class="comment_area_bot_btn btn_reply">답글 <span class="count">0</span></button>
+                                </div>
+                            </div>
+                            <div class="comment_reply">
+                                <div class="txt_area">
+                                    <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
+                                    <div class="txt_area_bot">
+                                        <div class="select_sticker">
+                                            <button type="button" class="toggle_tab">스티커</button>
+                                            <div class="tabs">
+                                                <div class="tab_btns">
+                                                    <button type="button" class="tab_btn on">레벨스티커</button>
+                                                    <button type="button" class="tab_btn">독자티콘</button>
+                                                </div>
+                                                <div class="stickers">
+                                                    <div class="sticker_set on">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/7d573ada0c2c340a952059e867b234e2.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/49956d121c0a77d30d01f822f051aa9f.jpg" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/62e87df7f7d697eb6fd48fc6ef0a502b.jpg" alt=""></a>
+                                                    </div>
+                                                    <div class="sticker_set">
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/83d5aed6ec165e7f1d710ba6cd404d61.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/18c88c169c021ada65390d5f9d8b98da.png" alt=""></a>
+                                                        <a href="" class="btn_add_sticker"><img src="https://mkids.dongascience.com/upload/sticker/a97a7fb3f867e048b1717a234793873c.png" alt=""></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn_apply">댓글달기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 만화 리스트 팝업 -->
+            <div class="layer_popup popup_epi">
+                <div class="layer_popup_inner">
+                    <div class="list_epi_wrap">
+                        <button class="close_popup" onclick="close_popup(this)"><span class="blind">팝업닫기</span></button>
+                        <ul class="list_epi">
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 1화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 2화 미안하다 이거 보여주려고 </p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 3화 미안하다</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li><li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li><li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 1화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+                            <li class="list_epi_item">
+                                <a href="" class="list_epi_link ">
+                                    <p class="tit ellipsis1">제 2화 미안하다 이거 보여주려고 </p>
+                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
+                                    <span class="ico_arrow"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //만화 리스트 팝업 -->
+        </div>
+
+    </div>
+    <!--
+        //audio_player
+        audio_player 클래스
+        노출, 비노출 : on
+        축소 : minimal
+        확장 : maximal
+    -->
+    <div class="audio_player maximal">
+        <div class="audio-player">
+            <!--
+            <div class="timeline">
+                <div class="progress"></div>
+            </div>
+            -->
+
+
+            <div class="full_tit">
+                <button class="btn_toggle_size btn_minimal" onclick="player_min();"><span class="blind">축소</span></button>
+                <h2 id="audio_tit" class="full_tit_txt ellipsis4">재생중인 오디오가 없습니다.</h2>
+            </div>
+            <div class="slider_wrap">
+                <div class="slider">
+
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="marquee_tit">
+                    <marquee id="marquee" >
+                        <div class="marquee_inner">
+                            재생중인 오디오가 없습니다.
+                        </div>
+                    </marquee>
+                </div >
+
+                <div class="time">
+                    <div class="current">0:00</div>
+                    <div class="length">0:00</div>
+                </div>
+
+
+                <div class="control_box">
+                    <button onclick="rewindAudio()" class="control_box_btns btn_rewind"><span class="blind">rewind</span><span class="sec">-15</span><span class="blind">sec</span></button>
+                    <div class="player_btn play"></div>
+                    <button onclick="forwardAudio()" class="control_box_btns btn_forward"><span class="blind">forward</span><span class="sec">+15</span><span class="blind">sec</span></button>
+                </div>
+                <div class="controls_bot">
+                    <div class="controls_bot_left">
+                        <div class="speed_ctrl">
+                            <strong class="blind">재생속도</strong>
+                            <select name="" id="" onchange="speed(this)">
+                                <option value="0.25">X 0.25</option>
+                                <option value="0.5">X 0.5</option>
+                                <option value="0.75">X 0.75</option>
+                                <option value="1" selected>X 1.00</option>
+                                <option value="1.25">X 1.25</option>
+                                <option value="1.5">X 1.5</option>
+                                <option value="1.75">X 1.75</option>
+                                <option value="2">X 2.00</option>
+                            </select>
+                        </div>
+                        <div class="volume-container">
+                            <div class="volume-slider">
+                                <div class="volume-percentage"></div>
+                            </div>
+                            <div class="volume-button">
+                                <i class="volume fa-solid fa-volume-high"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn_article">기사 보러가기</a>
+                </div>
+                <button class="btn_toggle_size btn_maximal" onclick="player_max();">
+                    <span class="blind">확장</span>
+                </button>
+            </div>
+            <label class="btn_like">
+                <input type="checkbox" id="audio_like" class="btn_like_chk">
+                <i class="ico_like"></i>
+                <span class="blind">좋아요</span>
+            </label>
+        </div>
+    </div>
+    <script src="./common/js/audio_ssok.js"></script>
+    <!-- //audio_player -->
+</body>
+</html>
