@@ -7,7 +7,6 @@
 
 @import '_variable';
 @import '_main';
-@import '_audio_ssok';
 @import '_comments';
 @import '_lists';
 @import '_view_page';
@@ -1147,7 +1146,7 @@
         border-radius: 8px;
         overflow: hidden;
         background-color: #eee;
-        background-image: url(../../images/common/logo.png);
+        background-image: url(../../images/common/logo.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50%;
@@ -1170,7 +1169,7 @@
         border-radius: 8px;
         overflow: hidden;
         background-color: #eee;
-        background-image: url(../../images/common/logo.png);
+        background-image: url(../../images/common/logo.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 50%;
@@ -1417,6 +1416,33 @@
         border-radius: 3px;
         padding: 0 3px;
     }
+}
+
+.tag_status {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 9px;
+    line-height: 18px;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 20px;
+    box-sizing: border-box;
+
+    &.ty_ing {
+        color: #fff;
+        background-color: map-get($colors, key);
+    }
+    &.ty_soon {
+        color: map-get($colors, key);
+        border: 1px solid map-get($colors, key);
+        line-height: 16px;
+    }
+    &.ty_end {
+        color: #fff;
+        background-color: #ccc;
+    }
+
 }
 
 .sc_ico {
@@ -1824,6 +1850,9 @@
     }
 
     #container {
+        &.main {
+            padding-top: 100px;
+        }
         @at-root #header.header ~ &.sub_m {
             padding-top: 100px;
         }

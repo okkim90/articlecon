@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="30" viewBox="0 0 37 30">
+    <path data-name="패스 1821" d="M19.282 7.25a6 6 0 1 1-6-6 6 6 0 0 1 6 6z" transform="translate(.718 -.25)" style="stroke-miterlimit:10;stroke:#ff5050;stroke-width:2px;fill:none"/>
+    <path data-name="패스 1828" d="M23.25 31.095v-8.274a3.846 3.846 0 0 0-3.95-3.71H1.192a3.853 3.853 0 0 0-3.94 3.727v8.273" transform="translate(3.75 -2.111)" style="stroke-linecap:round;stroke-miterlimit:10;stroke:#ff5050;stroke-width:2px;fill:none"/>
+    <path data-name="선 73" transform="translate(7 24)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0v5"/>
+    <g data-name="타원 276" transform="translate(19 12)" style="fill:#fef8d9;stroke:#ff5050;stroke-width:2px">
+        <circle cx="9" cy="9" r="9" style="stroke:none"/>
+        <circle cx="9" cy="9" r="8" style="fill:none"/>
+    </g>
+    <path data-name="선 59" transform="translate(24 21)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0h8"/>
+    <path data-name="선 60" transform="translate(28 17)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0v8"/>
+</svg>

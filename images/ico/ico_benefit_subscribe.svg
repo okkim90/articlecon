@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="34" viewBox="0 0 43 34">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #ff5050;
+        stroke-width: 2px;
+      }
+
+      .cls-1, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #fef8d9;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="img_정기구독" transform="translate(1 1)">
+    <path id="패스_1830" data-name="패스 1830" class="cls-1" d="M11.25,5.25H6.29a2.028,2.028,0,0,0-2.04,2V35.241A2.032,2.032,0,0,0,6.29,37.25h23.92a2.033,2.033,0,0,0,2.039-2.009V7.255a2.029,2.029,0,0,0-2.039-2H25.25" transform="translate(-4.25 -5.25)"/>
+    <rect id="사각형_1656" data-name="사각형 1656" class="cls-2" width="8" height="32" rx="2" transform="translate(10)"/>
+    <line id="선_70" data-name="선 70" class="cls-1" x2="7" transform="translate(11 5)"/>
+    <line id="선_71" data-name="선 71" class="cls-1" x2="7" transform="translate(11 15)"/>
+    <line id="선_65" data-name="선 65" class="cls-1" x2="6" transform="translate(0 4.999)"/>
+    <line id="선_67" data-name="선 67" class="cls-1" x2="6" transform="translate(0 15)"/>
+    <line id="선_68" data-name="선 68" class="cls-1" x2="6" transform="translate(22 5)"/>
+    <line id="선_69" data-name="선 69" class="cls-1" x2="6" transform="translate(22 15)"/>
+    <g id="타원_277" data-name="타원 277" class="cls-3" transform="translate(24 15)">
+      <circle class="cls-5" cx="9" cy="9" r="9"/>
+      <circle class="cls-6" cx="9" cy="9" r="8"/>
+    </g>
+    <line id="선_72" data-name="선 72" class="cls-4" x2="4" y2="3" transform="translate(33 24)"/>
+    <path id="패스_1831" data-name="패스 1831" class="cls-4" d="M0,0V4" transform="translate(33 20)"/>
+  </g>
+</svg>

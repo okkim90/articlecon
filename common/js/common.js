@@ -48,74 +48,6 @@ $(function(){
     });
 
 
-    var mv = new Swiper('.mv',{
-        speed:600,
-        slidesPerView:3,
-        loop:true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction:false
-        },
-        navigation: {
-            nextEl: '.mv_next',
-            prevEl: '.mv_prev'
-        },
-        pagination: {
-            clickable:true,
-            el: '.mv_pagination'
-        },
-        breakpoints: {
-            1024: {
-                slidesPerView:1
-            }
-        }
-
-    });
-
-    var audio_slide = new Swiper('.main_audio_slide',{
-        slidesPerView:"auto",
-        spaceBetween: 40,
-        loop:true,
-        speed: 600,
-        freeMode: true,
-        // autoplay: {
-        //     delay: 4000,
-        //     disableOnInteraction:false
-        // },
-
-        breakpoints: {
-            1024: {
-
-            },
-            767: {
-                spaceBetween: 20,
-
-            }
-        }
-    });
-
-
-
-    var article_slide = new Swiper('.main_article_slide',{
-        slidesPerView: "auto",
-        spaceBetween: 40,
-        loop:true,
-        speed: 600,
-        //freeMode: true,
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction:false
-        },
-        breakpoints: {
-            1024: {
-
-            },
-            767: {
-                spaceBetween: 20,
-            }
-        }
-    });
-
     resizeCont();
     $(window).on('load resize',function(){
         resizeCont();
@@ -128,9 +60,6 @@ $(function(){
             $('#content').removeClass('audio_play');
         }
     });
-
-
-
 
 
     $('.toggle_tab').on('click',function(){
@@ -182,8 +111,6 @@ $(function(){
         });
     })
 
-
-
     //투표 결과 프로그레스바 스크립트
     $('.progress_wrap').each(function(){
         var $progress = $(this).find('.progress');
@@ -226,6 +153,12 @@ $(function(){
 
     //토론결과
     discussionResult();
+
+    //메인페이지 상단 리스트 스와이프
+    initSwiper1('.card_list');
+
+    //메인 파이차트+결과
+    createChart();
 });
 
 
@@ -324,3 +257,119 @@ function discussionResult(){
     }
 }
 
+
+
+/* 메인페이지 상단 리스트 스와이프 */
+var mySwiper1 = undefined;
+function initSwiper1(target) {
+    let $this = $(target);
+    let screenWidth = window.innerWidth;
+    if(screenWidth <= 767 && mySwiper1 == undefined) {
+        mySwiper1 = new Swiper(target, {
+            slidesPerView: 1,
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 4500,
+                disableOnInteraction: false,
+            },
+        });
+    } else if (screenWidth > 767 && mySwiper1 != undefined) {
+        mySwiper1.destroy();
+        mySwiper1 = undefined;
+        $this.find('.swiper-wrapper').removeAttr('style');
+        $this.find('.swiper-slide').removeAttr('style');
+
+    }
+}
+
+$(window).on('load resize', function(){
+    initSwiper1('.card_list');
+});
+/* // 메인페이지 상단 리스트 스와이프 */
+
+
+
+
+/* 메인페이지 파이차트 생성 + 결과 노출 스크립트 */
+function createChart() {
+    var colorArr = [],
+        pieData = [],
+        sectorAngleArr = [],
+        percentArr = [],
+        txtArr = [],
+        svg = '<svg class="pie_svg" viewBox="0 0 400 400">',
+        total = 0,
+        startAngle = 0,
+        endAngle = 0,
+        x1 = 0,
+        x2 = 0,
+        y1 = 0,
+        y2 = 0,
+        percent = 0;
+        result = '';
+
+    // Get values of input boxes and store in pieData array
+    $('.input-container input').each(function(){
+        var value = parseInt($(this).val()); // make sure value is saved as an int
+        pieData.push(value);
+        total += value; // Adds all numbers to get the sum of all inputs
+
+        var $color = $(this).data('color');
+        colorArr.push($color);
+        var $txt = $(this).data('txt');
+        txtArr.push($txt);
+    });
+
+    // Get angles each slice swipes for sectorAngleArr
+    for (var i = 0; i < pieData.length; i++) {
+        var percentArr_item = Math.round(pieData[i] * 100 / total);
+        percentArr.push(percentArr_item + "%" );
+
+        var angle = Math.ceil(360 * pieData[i] / total);
+        sectorAngleArr.push(angle);
+    }
+
+    for (var i = 0; i < percentArr.length; i++) {
+        //document.querySelectorAll('.result_percent')[i].textContent  = percentArr[i];
+        //var main_discussion_result =  document.querySelector('.main_discussion_result');
+        var item = '<span class="main_discussion_result_item">'+
+                        '<i style="background:'+ colorArr[i] +'"></i>'+
+                        '<b class="result_percent" style="color:'+ colorArr[i] +'">'+percentArr[i]+'</b>'+
+                        '<span>'+txtArr[i]+'</span>'+
+                    '</span>';
+        result += item;
+    }
+
+    for (var i = 0; i < sectorAngleArr.length; i++) {
+        startAngle = endAngle;
+        endAngle = startAngle + sectorAngleArr[i];
+
+        // Check if the angle is over 180deg for large angle flag
+        percent = endAngle - startAngle;
+
+
+        var overHalf = 0;
+        if (percent > 180) {
+        overHalf = 1;
+        }
+
+        // Super fun math for calculating x and y positions
+        x1 = 200 + 200 * Math.cos(Math.PI * startAngle / 180);
+        y1 = 200 + 200 * Math.sin(Math.PI * startAngle / 180);
+
+        x2 = 200 + 200 * Math.cos(Math.PI * endAngle / 180);
+        y2 = 200 + 200 * Math.sin(Math.PI * endAngle / 180);
+
+        var d = "M200,200  L" + x1 + "," + y1 + "  A200,200 0 " + overHalf + ",1 " + x2 + "," + y2 + " z";
+        svg += '<path  d="' + d + '" style="fill: ' + colorArr[i] + ';" />';
+    }
+
+    // Close SVG
+    svg += '</svg>';
+
+    // Write html for SVG to the DOM
+    $('#pie-chart').html(svg);
+
+    $('.main_discussion_result').html(result);
+}

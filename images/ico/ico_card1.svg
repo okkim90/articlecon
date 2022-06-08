@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="40" viewBox="0 0 30 40">
+    <defs>
+        <clipPath id="0ct887ln8a">
+            <path data-name="사각형 1626" transform="translate(1 -8)" style="fill:#fff;opacity:0" d="M0 0h30v40H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-1 8)" style="clip-path:url(#0ct887ln8a)">
+        <path data-name="패스 1777" d="M25.366 14.267a1.008 1.008 0 0 0-.132.079l-3.37 2.425a.958.958 0 0 1-1.437-.41L17.591 10.3a2.218 2.218 0 0 1-2.606 0l-2.836 6.057a.959.959 0 0 1-1.437.41l-3.37-2.425a1.013 1.013 0 0 0-.133-.079 2.145 2.145 0 0 1-1.443 1.277 1.429 1.429 0 0 0 .049.239l2.429 7.511a1.065 1.065 0 0 0 .982.814H23.35a1.065 1.065 0 0 0 .982-.814l2.429-7.506a1.481 1.481 0 0 0 .048-.239 2.147 2.147 0 0 1-1.443-1.278z" transform="translate(-.288 -4.466)" style="fill:none;stroke:#ff5050;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        <circle data-name="타원 269" cx="2.08" cy="2.08" r="2.08" transform="translate(3 6.2)" style="fill:none;stroke:#ff5050;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        <circle data-name="타원 270" cx="2.08" cy="2.08" r="2.08" transform="translate(24.84 6.2)" style="fill:none;stroke:#ff5050;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+        <circle data-name="타원 271" cx="2.6" cy="2.6" r="2.6" transform="translate(13.4 1)" style="fill:none;stroke:#ff5050;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/>
+    </g>
+</svg>

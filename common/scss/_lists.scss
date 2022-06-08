@@ -103,6 +103,7 @@
     }
     &_txt {
         flex: 1;
+        align-self: center;
         min-width: 0;
         padding-left: 10px;
         @at-root .ty_freeboard & {
