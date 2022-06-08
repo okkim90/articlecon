@@ -26,14 +26,14 @@
                 font-size: 12px;
                 font-weight: 500;
                 &.on {
-                    border-color: map-get($colors, blue);
-                    background-color: map-get($colors, blue);
+                    border-color: map-get($colors, key);
+                    background-color: map-get($colors, key);
                     color: #fff;
                 }
                 &.soon {
-                    border-color: map-get($colors, blue);
+                    border-color: map-get($colors, key);
                     background-color: #fff;
-                    color: map-get($colors, blue);
+                    color: map-get($colors, key);
                 }
                 &.off {
                     border-color: #ccc;

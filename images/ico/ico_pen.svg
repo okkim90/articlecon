@@ -1,8 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="13.207" height="13.207" viewBox="0 0 13.207 13.207">
-    <g data-name="Icon feather-pen-tool">
-        <path data-name="패스 163" d="m18 22.2 4.2-4.2 1.8 1.8-4.2 4.2z" transform="translate(-11.293 -11.293)" style="fill:none;stroke:#5e25c7;stroke-linecap:round;stroke-linejoin:round"/>
-        <path data-name="패스 164" d="m12.6 9.6-.9-4.5L3 3l2.1 8.7 4.5.9z" transform="translate(-2.293 -2.293)" style="fill:none;stroke:#5e25c7;stroke-linecap:round;stroke-linejoin:round"/>
-        <path data-name="패스 165" d="m3 3 4.552 4.552" transform="translate(-2.293 -2.293)" style="fill:none;stroke:#5e25c7;stroke-linecap:round;stroke-linejoin:round"/>
-        <path data-name="패스 166" d="M15.9 14.7a1.2 1.2 0 1 1-1.2-1.2 1.2 1.2 0 0 1 1.2 1.2z" transform="translate(-8.593 -8.593)" style="fill:none;stroke:#5e25c7;stroke-linecap:round;stroke-linejoin:round"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="21.871" height="21.871" viewBox="0 0 21.871 21.871">
+    <g data-name="ico_write">
+        <path data-name="합치기 20" d="M.331 16.415v-.83l6.683.01v.83zm-.044-2.144v-.829h1.56l.011-7.917L0 4.568l.647-.679 1.516.781a.272.272 0 0 0 .3-.023l.374-.33a2.044 2.044 0 0 1 .517-.382.859.859 0 0 1 .516-.048 1.018 1.018 0 0 1 .46.259l.571.5a.339.339 0 0 0 .35.015l.049-.02 1.439-.712.63.688-1.876.928-.011 7.9h1.542v.829zm4.062-.823.011-7.983-.674-.592-.7.6-.011 7.972zM1.97.83V0h3.441v.83z" transform="rotate(-135 7.81 8.225)" style="fill:#ff5050"/>
+        <g data-name="패스 1807" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10">
+            <path d="M5.241 20.7H2.45A1.8 1.8 0 0 1 .5 19.112L.533 7.048a.4.4 0 0 1 .038-.168l.873-1.9 1.5-3.268c.127-.275.251-.549.38-.824A.6.6 0 0 1 3.843.5a.617.617 0 0 1 .572.287l2.78 6.1a.38.38 0 0 1 .037.167L7.2 19.12a1.8 1.8 0 0 1-1.959 1.58zM4.291.987z" style="stroke:none" transform="rotate(-135 7.47 9.303)"/>
+            <path d="M5.241 20.698c1.08 0 1.956-.708 1.96-1.578l.032-12.064a.38.38 0 0 0-.038-.167L4.415.787C4.324.588 4.065.497 3.843.5c-.257.003-.424.193-.516.388-.129.275-.253.549-.38.824-.5 1.09-1.002 2.179-1.503 3.268-.29.634-.581 1.267-.873 1.9a.398.398 0 0 0-.038.168L.5 19.112c-.002.87.873 1.58 1.951 1.582l2.79.004M4.291.988H4.29m.951 20.71-2.791-.004c-.856 0-1.668-.323-2.227-.884a2.398 2.398 0 0 1-.723-1.7l.033-12.065c0-.2.044-.399.13-.586l.873-1.896 1.503-3.268.121-.265c.087-.189.173-.378.262-.567.28-.597.808-.957 1.41-.963h.021c.65 0 1.228.341 1.47.869l2.778 6.096c.086.182.132.386.132.591L8.2 19.123c-.004 1.42-1.332 2.575-2.959 2.575z" style="fill:#ff5050;stroke:none" transform="rotate(-135 7.47 9.303)"/>
+        </g>
     </g>
 </svg>

@@ -19,9 +19,9 @@
             vertical-align: top;
             padding: 0 10px;
             line-height: 24px;
-            border: 1px solid map-get($colors,blue);
+            border: 1px solid map-get($colors, key);
             border-radius: 13px;
-            color: map-get($colors,blue);
+            color: map-get($colors, key);
             font-size: 12px;
             font-weight: bold;
             margin-bottom: 10px;

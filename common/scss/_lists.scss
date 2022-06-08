@@ -87,17 +87,17 @@
             border-radius: 10px;
             color: #fff;
             &.on {
-                background-color: map-get($colors, blue);
+                background-color: map-get($colors, key);
             }
             &.off {
                 background-color: #ccc;
             }
             &.soon {
                 background-color: #fff;
-                border: 1px solid map-get($colors, blue);
+                border: 1px solid map-get($colors, key);
                 box-sizing: border-box;
                 line-height: 17px;
-                color: map-get($colors, blue);
+                color: map-get($colors, key);
             }
         }
     }
@@ -114,6 +114,7 @@
             line-height: 18px;
             max-height: 36px;
             letter-spacing: -0.13px;
+            font-weight: 500;
             .sc_ico {
                 margin-right: 2px;
             }

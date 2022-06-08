@@ -21,7 +21,7 @@
             font-weight: bold;
         }
         &.ty_ctrl {
-            background-color: map-get($colors, blue);
+            background-color: map-get($colors, key);
             & + .paging_btn.ty_ctrl {
                 margin-left: 5px;
             }

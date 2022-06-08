@@ -132,7 +132,7 @@
             margin-left: 8px;
             font-size: 11px;
             line-height: 16px;
-            color: map-get($colors, blue);
+            color: map-get($colors, key);
             font-weight: bold;
             i {
                 width: 15px;
@@ -529,7 +529,7 @@
         line-height: 1.33;
         font-weight: bold;
         @at-root .vote_box.on & {
-            color: map-get($colors, blue);
+            color: map-get($colors, key);
         }
     }
 
@@ -556,7 +556,7 @@
         background-color: #ccc;
 
         @at-root .vote_box.on & {
-            background-color: map-get($colors, blue);
+            background-color: map-get($colors, key);
             color: #fff;
         }
     }
@@ -582,7 +582,7 @@
         }
 
         @at-root .vote_box.on & {
-            background-color: map-get($colors, blue);
+            background-color: map-get($colors, key);
             color: #fff;
             border-top: 1px solid rgba(30, 144, 255, 0.5);
             span {
@@ -643,7 +643,7 @@
                     background-color: map-get($colors, red);
                 }
                 &.ty_comming {
-                    background-color: map-get($colors, blue);
+                    background-color: map-get($colors, key);
                 }
                 &.ty_ended {
                     background-color: #666;
@@ -742,7 +742,7 @@
                     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
                     @at-root .comming .ico_status {
-                        background-color: map-get($colors, blue);
+                        background-color: map-get($colors, key);
                         color: #fff;
                     }
                     @at-root .ended .ico_status {
@@ -865,7 +865,7 @@
             width: 66%;
             .sc_thumb {
                 &_img {
-                    background-color: map-get($colors, blue);
+                    background-color: map-get($colors, key);
                 }
             }
             .tit {

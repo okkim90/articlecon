@@ -236,7 +236,7 @@
                                     position: absolute;
                                     width: 100%;
                                     height: 8px;
-                                    background-color: rgba(70, 184, 255, 0.4);;
+                                    background-color: rgba(255, 80, 80, 0.3);
                                     left: 0;
                                     top: 50%;
                                     transform: translateY(-50%);
@@ -318,7 +318,7 @@
             border-radius: 20px;
             font-size: 18px;
             border: solid 1px rgba(30, 144, 255, 0.2);;
-            color: map-get($colors, blue);
+            color: map-get($colors, key);
             font-weight: bold;
         }
     }
@@ -351,9 +351,9 @@
         color: #666;
         border-bottom: 1px solid #ccc;
         &.on {
-            color: map-get($colors,blue);
+            color: map-get($colors, key);
             font-weight: bold;
-            border-bottom: 1px solid map-get($colors,blue);
+            border-bottom: 1px solid map-get($colors, key);
         }
     }
 }
@@ -535,17 +535,25 @@
         }
     }
 
-
     &_write {
         display: inline-block;
         vertical-align: top;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: url(/images/ico/ico_write.svg);
-        &.white {
-            background-image: url(/images/ico/ico_write_w.svg);
+        padding: 0 7px;
+        border: 1px solid map-get($colors, key);
+        border-radius: 0 8px 8px 8px;
+        line-height: 28px;
+        height: 30px;
+        box-sizing: border-box;
+        font-size: 13px;
+        font-weight: bold;
+        color: map-get($colors, key);
+        span {
+            display: block;
+            padding-left: 25px;
+            background: url(../../images/ico/ico_pen.svg) no-repeat 0 center;
         }
     }
+
     &_back {
         width: 40px;
         height: 40px;
@@ -561,25 +569,33 @@
         line-height: 28px;
         box-sizing: border-box;
         border-radius: 4px;
-        border: 1px solid map-get($colors,blue);
-        background-color: map-get($colors,blue);
+        border: 1px solid map-get($colors, key);
+        background-color: map-get($colors, key);
         text-align: center;
         padding: 0 10px;
         color: #fff;
         font-size: 12px;
         font-weight: 500;
         &.white {
-            color: map-get($colors,blue);
+            color: map-get($colors, key);
             background-color: #fff;
         }
+        &.grey {
+            border-color: #e1e1e1;
+            color: #424242;
+            background-color: #f5f5f5;
+            padding: 0 7px;
+        }
+
+
     }
     &_mid {
         height: 36px;
         line-height: 34px;
         box-sizing: border-box;
         border-radius: 8px;
-        border: 1px solid map-get($colors,blue);
-        background-color: map-get($colors,blue);
+        border: 1px solid map-get($colors, key);
+        background-color: map-get($colors, key);
         text-align: center;
         padding: 0 15px;
         min-width: 80px;
@@ -587,7 +603,7 @@
         font-size: 13px;
         font-weight: 500;
         &.white {
-            color: map-get($colors,blue);
+            color: map-get($colors, key);
             background-color: #fff;
         }
     }
@@ -614,22 +630,6 @@
             background-position: right 55%;
         }
 
-    }
-
-    &_write2 {
-        padding: 0 15px;
-        border-radius: 6px;
-        border: solid 1px rgba(94, 37, 199, 0.2);
-        color: #5e25c7;
-        height: 36px;
-        font-weight: 500;
-        span {
-            display: block;
-            padding-left: 17px;
-            line-height: 34px;
-            background: url(/images/ico/ico_pen.svg) no-repeat 0 center;
-
-        }
     }
     &_plus {
         display: flex;
@@ -732,7 +732,7 @@
             opacity: 0;
             &:checked ~ .ico_like {
                 background-image: url(../../images/ico/ico_vp_like_on.svg);
-                background-color: map-get($colors, blue);
+                background-color: map-get($colors, key);
             }
         }
         .ico_like {
@@ -743,7 +743,7 @@
             background-size: 16px 14px;
             background-position: center center;
             background-color: #fff;
-            border: 1px solid map-get($colors, blue);
+            border: 1px solid map-get($colors, key);
             box-sizing: border-box;
             border-radius: 4px;
             background-image: url(../../images/ico/ico_vp_like.svg);
@@ -794,7 +794,7 @@
         padding: 0 8px;
         font-size: 12px;
         font-weight: 500;
-        color: map-get($colors, blue);
+        color: map-get($colors, key);
         &_inner {
             padding-left: 26px;
             background-repeat: no-repeat;
@@ -824,14 +824,14 @@
         display: inline-block;
         vertical-align: top;
         padding: 0 10px;
-        border: 1px solid map-get($colors,blue);
+        border: 1px solid map-get($colors, key);
         border-radius: 4px;
         height: 30px;
 
         box-sizing: border-box;
         font-size: 12px;
         font-weight: bold;
-        color: map-get($colors,blue);
+        color: map-get($colors, key);
         span {
             display: block;
             padding-right: 20px;
@@ -860,6 +860,25 @@
         color: #666;
     }
 }
+
+.list_top_sec {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    .select_box {
+
+    }
+    .btn_box {
+        padding-left: 10px;
+        display: flex;
+        flex-shrink: 0;
+        > * + * {
+            margin-left: 10px;
+        }
+    }
+}
+
 
 
 .writer_set {
@@ -966,6 +985,8 @@
         }
     }
 }
+
+
 
 .writer_set_v {
     display: flex;
@@ -1504,32 +1525,36 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px 20px 20px;
+        padding: 40px 20px 40px;
         box-sizing: border-box;
         width: 100%;
         height: 100%;
     }
-    .list_epi_wrap {
+    .layer_popup_cont {
+        display: flex;
         max-height: 100%;
         max-width: 100%;
         position: relative;
+    }
+    .layer_popup_contents {
         width: 700px;
-        .list_epi {
-            max-height: 80vh;
-            border-radius: 8px;
-            height: 100%;
-            width: 100%;
-            overflow-y: auto;
-            background-color: #fff;
-        }
-
+        padding: 20px;
+        background-color: #fff;
+        max-height: 100%;
+        max-width: 100%;
+        overflow-y: auto;
+        box-sizing: border-box;
+        border-radius: 12px;
     }
     .close_popup {
         position: absolute;
         width: 40px;
         height: 40px;
-        right: -10px;
-        top: -40px;
+        right: 0;
+        top: -20px;
+        background-color: #fff;
+        border-radius: 50%;
+
         &::before {
             content: '';
             position: absolute;
@@ -1538,7 +1563,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
-            background-color: #fff;
+            background-color: #333;
         }
         &::after {
             content: '';
@@ -1548,7 +1573,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%) rotate(-45deg);
-            background-color: #fff;
+            background-color: #333;
         }
     }
 }
@@ -1559,7 +1584,7 @@
     display: block;
     position: relative;
     border-radius: 8px;
-    background-color: map-get($colors, blue);
+    background-color: map-get($colors, key);
     color: #fff;
     padding: 15px 20px;
     &.ty_login {
@@ -1693,6 +1718,24 @@
 
     }
 }
+.select {
+    &_ty1 {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        height: 30px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 0 30px 0 10px;
+        border-radius: 4px;
+        font-size: 13px;
+        background-image: url(../../images/ico/arrow_bot_b.svg);
+        background-repeat: no-repeat;
+        background-position: calc(100% - 10px) center;
+    }
+}
+
+
 
 .limit_info {
     &_wrap {
@@ -1937,7 +1980,7 @@
                 white-space: nowrap;
                 li {
                     & + li {
-                        margin-left: 0;
+                        margin-left: 10px;
                     }
                     a {
                         font-size: 13px;
