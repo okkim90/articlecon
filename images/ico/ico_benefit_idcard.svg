@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="37" viewBox="0 0 44 37">
+    <g data-name="사각형 1654" transform="translate(0 5)" style="stroke:#ff5050;stroke-width:2px;fill:none">
+        <rect width="44" height="32" rx="6" style="stroke:none"/>
+        <rect x="1" y="1" width="42" height="30" rx="5" style="fill:none"/>
+    </g>
+    <path data-name="패스 1827" d="M28.455 5.25v-2.3a1.791 1.791 0 0 1 1.87-1.7h8.26a1.791 1.791 0 0 1 1.869 1.7v2.3" transform="translate(-12.455 -.25)" style="stroke-linejoin:round;stroke:#ff5050;stroke-width:2px;fill:none"/>
+    <path data-name="선 56" transform="translate(28 15)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0h9"/>
+    <path data-name="선 57" transform="translate(28 21)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0h9"/>
+    <path data-name="선 58" transform="translate(28 27)" style="stroke-linecap:round;stroke:#ff5050;stroke-width:2px;fill:none" d="M0 0h9"/>
+    <g data-name="사각형 1655" style="fill:#fef8d9;stroke:#ff5050;stroke-width:2px">
+        <path d="M7.692 0h2.615A7.692 7.692 0 0 1 18 7.692 2.308 2.308 0 0 1 15.692 10H2.308A2.308 2.308 0 0 1 0 7.692 7.692 7.692 0 0 1 7.692 0z" style="stroke:none" transform="translate(6 19)"/>
+        <path d="M7.545 1h2.909A6.545 6.545 0 0 1 17 7.545 1.455 1.455 0 0 1 15.545 9H2.455A1.455 1.455 0 0 1 1 7.545 6.545 6.545 0 0 1 7.545 1z" style="fill:none" transform="translate(6 19)"/>
+    </g>
+    <path data-name="패스 1821" d="M15.282 5.25a4 4 0 1 1-4-4 4 4 0 0 1 4 4z" transform="translate(3.718 10.75)" style="stroke-miterlimit:10;fill:#fef8d9;stroke:#ff5050;stroke-width:2px"/>
+</svg>
