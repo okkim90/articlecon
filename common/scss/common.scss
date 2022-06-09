@@ -13,6 +13,7 @@
 @import '_write_page';
 @import '_vote';
 @import '_paging';
+@import '_layer_popup';
 
 
 @each $key, $color in $colors {
@@ -23,6 +24,10 @@
 
 .m_only {
     display: none;
+}
+
+.td_u {
+    text-decoration: underline;
 }
 
 #content {
@@ -1483,6 +1488,15 @@
 
 
 .caution_list {
+    &_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        .btn_s_mid {
+            flex-shrink: 0;
+        }
+    }
     &.ty_bot {
         margin-top: 10px;
     }
@@ -1504,79 +1518,7 @@
     }
 }
 
-.layer_popup {
-    display: none;
-    position: fixed;
 
-    z-index: 9999;
-
-    &.on {
-        display: block;
-    }
-
-    width: 100%;
-    height: 100%;
-    background-color: rgba(#000, .4);
-    left: 0;
-    top: 0;
-
-
-    .layer_popup_inner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 40px 20px 40px;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%;
-    }
-    .layer_popup_cont {
-        display: flex;
-        max-height: 100%;
-        max-width: 100%;
-        position: relative;
-    }
-    .layer_popup_contents {
-        width: 700px;
-        padding: 20px;
-        background-color: #fff;
-        max-height: 100%;
-        max-width: 100%;
-        overflow-y: auto;
-        box-sizing: border-box;
-        border-radius: 12px;
-    }
-    .close_popup {
-        position: absolute;
-        width: 40px;
-        height: 40px;
-        right: 0;
-        top: -20px;
-        background-color: #fff;
-        border-radius: 50%;
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 2px;
-            height: 20px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background-color: #333;
-        }
-        &::after {
-            content: '';
-            position: absolute;
-            width: 2px;
-            height: 20px;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-            background-color: #333;
-        }
-    }
-}
 
 
 
@@ -1839,7 +1781,6 @@
         }
     }
 }
-
 
 
 .sub_sec {

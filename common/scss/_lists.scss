@@ -197,6 +197,20 @@
 }
 
 
+.list_bar {
+    li {
+        position: relative;
+        padding-left: 0.6em;
+        &::before {
+            content: '-';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+
 @media (max-width:767px) {
     .pp_gallery {
         margin-top: -20px;

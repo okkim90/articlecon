@@ -1,0 +1,175 @@
+.layer_popup {
+    display: none;
+    position: fixed;
+
+    z-index: 9999;
+
+    &.on {
+        display: block;
+    }
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, .4);
+    left: 0;
+    top: 0;
+
+    .layer_popup_inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px 40px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .layer_popup_cont {
+        display: flex;
+        max-height: 100%;
+        max-width: 100%;
+        position: relative;
+    }
+    .layer_popup_contents {
+        width: 700px;
+        padding: 20px;
+        background-color: #fff;
+        max-height: 100%;
+        max-width: 100%;
+        overflow-y: auto;
+        box-sizing: border-box;
+        border-radius: 12px 0 12px 12px;
+
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #646464;
+            border-radius: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+    }
+    .close_popup {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        top: -20px;
+        background-color: #fff;
+        border-radius: 50%;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+            background-color: #333;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            background-color: #333;
+        }
+    }
+}
+
+.write_tip {
+    .layer_popup_contents {
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.14px;
+    &_tit {
+        font-size: 24px;
+        line-height: 1.33;
+        letter-spacing: -.24px;
+        color: #212121;
+    }
+    &_introduce {
+        margin-top: 20px;
+        .img_box {
+            float: right;
+            margin-top: -80px;
+        }
+    }
+
+    &_step {
+        &_item {
+            display: block;
+            border: 1px solid map-get($colors, key);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 30px;
+            .tit {
+                display: block;
+                font-size: 20px;
+                line-height: 1.4;
+                letter-spacing: -.2px;
+                & ~ * {
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+    .quote_area {
+        max-width: 304px;
+        margin: 30px auto 0;
+        display: flex;
+        flex-flow: column;
+        font-size: 18px;
+        line-height: 1.44;
+        letter-spacing: -0.18px;
+        .ico_quote_open {
+            align-self: flex-start;
+            margin-bottom: 4px;
+        }
+        .ico_quote_close {
+            align-self: flex-end;
+        }
+    }
+    .write_tip_wrap {
+        margin: 30px -20px 0;
+        padding: 30px 20px 40px;
+        background-color: #fbfbfb;
+        .tit {
+            display: block;
+            font-size: 20px;
+            letter-spacing: -0.2px;
+        }
+        .write_tip_ol {
+            margin-top: 20px;
+            li {
+                padding-left: 30px;
+                position: relative;
+                .num {
+                    position: absolute;
+                    font-family: 'Godo';
+                    font-weight: bold;
+                    color: map-get($colors, key);
+                    left: 0;
+                    top: 0;
+                    font-size: 20px;
+                    line-height: 22px;
+                    letter-spacing: -0.2px;
+                }
+                & + li {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+    }
+}

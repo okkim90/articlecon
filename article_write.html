@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>기사콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content" class="sub_m">
+            <header id="header" class="sub_header">
+                <a href="" class="btn_back"><span class="blind">뒤로가기</span></a>
+                <h1 class="tit"><span class="blind">기사콘</span> 기사쓰기</h1>
+                <div class="btns">
+                    <button type="button" class="btn_small white4">임시저장</button>
+                    <button type="button" class="btn_save ty_small"><span class="blind">등록</span></button>
+                </div>
+            </header>
+            <div id="container" class="sub_m">
+                <div class="sub_wrap pt0">
+                    <div class="sub_inner">
+
+                        <div class="wp_cont">
+                            <input type="text" class="input_ty1" placeholder="제목을 입력 해주세요.">
+                            <ul class="wp_btn_list">
+                                <li>
+                                    <button class="wp_btn" type="button">
+                                        <div class="ico_box">
+                                            <img src="./images/ico/ico_img.svg" alt="">
+                                        </div>
+                                        <strong>이미지</strong>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="wp_btn" type="button">
+                                        <div class="ico_box">
+                                            <img src="./images/ico/ico_sound.svg" alt="">
+                                        </div>
+                                        <strong>소리</strong>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="wp_btn" type="button">
+                                        <div class="ico_box">
+                                            <img src="./images/ico/ico_mov.svg" alt="">
+                                        </div>
+                                        <strong>동영상</strong>
+                                    </button>
+                                </li>
+                            </ul>
+                            <h2 class="blind">주의사항</h2>
+                            <div class="caution_list_wrap">
+                                <ul class="caution_list">
+                                    <li>이미지 최대 10MB</li>
+                                    <li>소리 최대 20MB (아이폰웹 업로드 불가)</li>
+                                    <li>동영상 최대 500MB 까지 첨부</li>
+                                </ul>
+                                <button class="btn_s_mid grey" onclick="open_popup(this)" data-popup="write_tip">기사 잘 쓰는 법</button>
+                            </div>
+
+                            <textarea name="" id="" class="ta_ty1 ty_wp" placeholder="내용을 입력 해주세요."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 기사 쓰는 방법 레이어 팝업 -->
+            <div class="layer_popup write_tip">
+                <div class="layer_popup_inner">
+                    <div class="layer_popup_cont">
+                        <button class="close_popup" onclick="close_popup(this);"><span class="blind">팝업닫기</span></button>
+                        <div class="layer_popup_contents">
+                            <h2 class="write_tip_tit ff_godo">기사 잘 쓰는법이 <br> 궁금해요!</h2>
+                            <div class="write_tip_introduce">
+                                <span class="img_box">
+                                    <img src="./images/common/cha_write.png" alt="">
+                                </span>
+                                안녕하세요.^^  <br>
+                                어과동 기자단 친구들~! <br>
+                                ‘기사를 작성해야지’ 마음을 다잡고 컴퓨터 앞에 앉았는데 무엇을, 어떻게 작성할지 막막할 수 있어요. 아래 내용을 보면서 기사를 작성해 봅시다!
+                                기사를 작성해 본 친구들도 빠뜨린 부분은 없었는지 확인해 보세요.
+                            </div>
+                            <div class="write_tip_step">
+                                <div class="write_tip_step_item">
+                                    <strong class="tit ff_godo">
+                                        <span class="fc_key">제목</span> 정하기
+                                    </strong>
+                                    <p class="desc">
+                                        기사에서 아주 중요한 것이 제목이에요. 사람들은 제목을 보고 기사를 볼 것인지 말 것인지 결정하는 경우가 많거든요. 좋은 제목은 어떻게 정하는 것일까요?
+                                    </p>
+                                    <ul class="list_bar fwB">
+                                        <li>기사의 의도와 주제가 드러나도록</li>
+                                        <li>중요한 내용을 담고 있도록</li>
+                                        <li>흥미를 끌 수 있도록</li>
+                                    </ul>
+                                    <p class="desc">
+                                        위 3가지 조건을 갖춘 제목이 좋은 제목이랍니다.
+                                    </p>
+                                </div>
+                                <div class="write_tip_step_item">
+                                    <strong class="tit ff_godo ">
+                                        <span class="fc_key">육하원칙</span> 지키기
+                                    </strong>
+                                    <p class="desc">
+                                        어떤 사건에 대해 기사를 쓸 때 무엇을 써야 할지 모르겠다면, 우선 ‘육하원칙(언제, 누가, 어디서, 무엇을, 어떻게, 왜)’에 맞게 내용을 배열해 보세요. 객관적인 정보를 빠뜨리지 않고 작성할 수 있답니다. <span class="td_u"> 특히, 체험 활동을 한 후 기사를 작성할 때는 육하원칙을 잘 지켜 주세요.</span>
+                                    </p>
+                                </div>
+                                <div class="write_tip_step_item">
+                                    <strong class="tit ff_godo">
+                                        <span class="fc_key">사진</span> 또는 <span class="fc_key">그림</span>  설명하기
+                                    </strong>
+                                    <p class="desc">
+                                        기사 내용과 관련 있는 사진과 그림을 첨부하면 기사를 이해하는 데 도움이 돼요.
+                                        사용된 사진과 그림이 무엇을 설명하는지 내용을 작성해 주세요.
+                                         <span class="td_u fc_key">이때 본인이 직접 찍은 사진만 사용해 주세요, 특히, 포털 사이트에서 가져온 사진이나 그림을 사용하지 말아주세요. 저작권에 문제가 될 수 있습니다.</span>
+                                    </p>
+                                </div>
+                                <div class="write_tip_step_item">
+                                    <strong class="tit ff_godo">
+                                        <span class="fc_key">띄어쓰기</span>와 <span class="fc_key">맞춤법</span> 지키기
+                                    </strong>
+                                    <p class="desc">
+                                        정확한 정보를 전달해야 하는 기사에 오·탈자가 있다면 내용에 신뢰가 떨어지겠죠? 띄어쓰기와 맞춤법을 지키지 않은 글은 성의없게 보인답니다. 띄어쓰기와 맞춤법은 잘 작성된 기사의 기본이에요.
+                                    </p>
+                                </div>
+                                <div class="write_tip_step_item">
+                                    <strong class="tit ff_godo">
+                                        <span class="fc_key">인터뷰</span> 기사 쓰기
+                                    </strong>
+                                    <p class="desc">
+                                        인터뷰를 한 모든 내용을 기사에 다 쓸 수는 없어요. 인상 깊었거나 중요해서 강조하고 싶은 내용, 독자가 궁금해 할 내용을 중심으로 인터뷰 기사를 작성해 주세요. 인터뷰 내용을 기사의 포인트로 활용해 주세요.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="quote_area taC">
+                                <img src="./images/common/quote_open.svg" alt="" class="ico_quote_open">
+                                <p>마지막으로 <b>‘나는 기자다’</b>라는 자부심으로 어디에서든 자신감 있고 당당하게 취재하는 자세! 잊지 마세요.^^</p>
+                                <img src="./images/common/quote_close.svg" alt="" class="ico_quote_close">
+                            </div>
+                            <div class="write_tip_wrap">
+                                <strong class="tit taC ff_godoB">글 잘쓰는 <span class="fc_key">10가지 법칙</span></strong>
+                                <ul class="write_tip_ol">
+                                    <li><b class="num">01</b>길지 않아야 해요. 한 번에 읽기 편하도록 긴 문장은 쪼개서 짧게 만들어요.</li>
+                                    <li><b class="num">02</b>쉽게 써야 해요. 영어, 한문을 사용하는 대신 순수한 우리말로 쉽게 써요.</li>
+                                    <li><b class="num">03</b>미사여구를 자제해요. ‘굉장히’, ‘매우’ 등 꾸미는 단어를 자주 쓰면 과장된 표현으로 느껴져요. </li>
+                                    <li><b class="num">04</b>적절한 용어를 선택해요. 글의 앞뒤를 보고 꼭 알맞은 단어를 찾아서 써요. </li>
+                                    <li><b class="num">05</b>문장 호응관계를 잘 지켜요. 주어와 목적어, 서술어가 서로 자연스럽게 어울려야 해요. </li>
+                                    <li><b class="num">06</b>자세히 써요. 단순히 ‘높다’가 아니라 ‘3m 높이’라고 쓴다면 정확하겠죠? </li>
+                                    <li><b class="num">07</b>같은 말은 피해요. 한 문장에 같은 단어가 되풀이되지 않도록 해요. </li>
+                                    <li><b class="num">08</b>글을 쓰기 전에 어떤 내용을 쓰고 싶은지 간략하게 정리해 보세요. 커다란 구성이 정해지면 글을 쓰는 데 도움이 될 거예요. </li>
+                                    <li><b class="num">09</b>글 내용에 적합한 자료(글, 사진 등)를 활용해요. 자료의 출처는 꼭 밝혀 주세요. </li>
+                                    <li><b class="num">10</b>문단을 구분해요. 문단을 구분하면 긴 글의 지루함을 덜어 주는 효과가 있어요. </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // 기사 쓰는 방법 레이어 팝업 -->
+        </div>
+
+    </div>
+</body>
+</html>
