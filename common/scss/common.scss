@@ -14,6 +14,8 @@
 @import '_vote';
 @import '_paging';
 @import '_layer_popup';
+@import '_reporter';
+
 
 
 @each $key, $color in $colors {
@@ -283,7 +285,7 @@
 .menu_dep2 {
     padding: 16px 20px;
     box-sizing: border-box;
-    background-color: rgba(239, 248, 255, 1);
+    background-color: #fff2f2;
     text-align: center;
     position: relative;
     &::before {
@@ -291,7 +293,7 @@
         position: absolute;
         width: 100vw;
         height: 100%;
-        background-color: rgba(239, 248, 255, 1);
+        background-color: #fff2f2;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
@@ -322,7 +324,7 @@
             background-color: #fff;
             border-radius: 20px;
             font-size: 18px;
-            border: solid 1px rgba(30, 144, 255, 0.2);;
+            border: solid 1px rgba(255, 80, 80, 0.2);
             color: map-get($colors, key);
             font-weight: bold;
         }

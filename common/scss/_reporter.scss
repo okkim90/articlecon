@@ -1,0 +1,207 @@
+
+.reporter_card {
+    max-width: 260px;
+    margin: 0 auto;
+    &_thumb_area {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    &_thumb {
+        padding-top: 100%;
+        position: relative;
+        &::before {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left: -50%;
+            top: 50%;
+
+
+            content:'PRESS';
+            color: rgba(33, 33, 33, 0.1);
+            font-size: 50px;
+            line-height: 1;
+            letter-spacing: 5px;
+            transform: translate(-22px, -50%) rotate(-90deg);
+
+            font-weight: bold;
+
+        }
+        .img_box {
+            overflow: hidden;
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border: 4px solid map-get($colors, key);
+
+            box-sizing: border-box;
+            border-radius: 20px;
+            background-image: url(../../images/common/bg_idcard.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &_id {
+        margin-top: 18px;
+        .name {
+            display: block;
+            font-size: 30px;
+            letter-spacing: -.3px;
+            line-height: 34px;
+        }
+        .logo {
+            display: block;
+            margin-top: 9px;
+        }
+    }
+    &_info {
+        padding-top: 15px;
+        margin-top: 20px;
+        border-top: 1px solid #ccc;
+        .desc {
+            font-size: 13px;
+            line-height: 1.38;
+            letter-spacing: -0.13px;
+        }
+        .period {
+            font-size: 12px;
+            line-height: 1.42;
+            letter-spacing: -0.12px;
+            margin-top: 5px;
+            color: #999;
+        }
+        .benefit {
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.42;
+            letter-spacing: -0.12px;
+            color: #212121;
+        }
+    }
+}
+
+
+.reporter_info {
+    &_btns {
+        display: flex;
+        justify-content: center;
+        font-size: 0;
+        margin: 0 -10px;
+        margin-top: 30px;
+        li {
+            //max-width: 170px;
+            width: 50%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+    }
+    &_btn {
+        height: 100%;
+        display: flex;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 15px 20px 20px;
+        border-radius: 8px;
+        transition: all .1s ease-in-out;
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+        }
+        .ico_box {
+            display: flex;
+            height: 48px;
+            align-items: center;
+            justify-content: center;
+        }
+        .txt_box {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+            margin-top: 4px;
+            &::after {
+                content:'';
+                position: absolute;
+                width: 6px;
+                height: 10px;
+                background-image: url(../../images/ico/arrow_next.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                left: 100%;
+                margin-left: 10px;
+                top: 50%;
+                margin-top: -4px;
+            }
+        }
+    }
+}
+
+.caution_box {
+    @at-root .reporter_card_inner & {
+        margin-top: 30px;
+    }
+    border: 1px solid map-get($colors, key);
+    border-radius: 6px;
+    padding: 10px 10px 15px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: -0.12px;
+    &_tit {
+        display: block;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -0.16px;
+        margin-bottom: 8px;
+    }
+    li + li {
+        margin-top: 5px;
+    }
+}
+
+.reporter_info_top {
+    text-align: center;
+    .log_msg {
+        font-size: 17px;
+        line-height: 1.65;
+        letter-spacing: -0.17px;
+    }
+    .name {
+        display: block;
+        font-size: 24px;
+        line-height: 27px;
+        letter-spacing: -0.24px;
+        color: #212121;
+    }
+    .desc {
+        font-size: 17px;
+        line-height: 1.4;
+        letter-spacing: -0.17px;
+        margin-top: 4px;
+    }
+    .caution {
+        display: block;
+        font-size: 12px;
+        line-height: 1.42;
+        letter-spacing: -0.12px;
+        color: #999;
+        margin-top: 5px;
+    }
+}

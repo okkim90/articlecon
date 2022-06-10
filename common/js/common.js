@@ -157,6 +157,7 @@ $(function(){
     //메인페이지 상단 리스트 스와이프
     initSwiper1('.card_list');
 
+
     //메인 파이차트+결과
     createChart();
 });
@@ -264,27 +265,32 @@ var mySwiper1 = undefined;
 function initSwiper1(target) {
     let $this = $(target);
     let screenWidth = window.innerWidth;
-    if(screenWidth <= 767 && mySwiper1 == undefined) {
-        mySwiper1 = new Swiper(target, {
-            slidesPerView: 1,
-            speed: 600,
-            loop: true,
-            autoplay: {
-                delay: 4500,
-                disableOnInteraction: false,
-            },
-        });
-    } else if (screenWidth > 767 && mySwiper1 != undefined) {
-        mySwiper1.destroy();
-        mySwiper1 = undefined;
-        $this.find('.swiper-wrapper').removeAttr('style');
-        $this.find('.swiper-slide').removeAttr('style');
+    if($this.length > 0 ){
+        if( screenWidth <= 767 && mySwiper1 == undefined) {
+            mySwiper1 = new Swiper(target, {
+                slidesPerView: 1,
+                speed: 600,
+                loop: true,
+                autoplay: {
+                    delay: 4500,
+                    disableOnInteraction: false,
+                },
+            });
+        } else if (screenWidth > 767 && mySwiper1 != undefined) {
+            mySwiper1.destroy();
+            mySwiper1 = undefined;
+            $this.find('.swiper-wrapper').removeAttr('style');
+            $this.find('.swiper-slide').removeAttr('style');
 
+        }
     }
 }
 
 $(window).on('load resize', function(){
+
     initSwiper1('.card_list');
+
+
 });
 /* // 메인페이지 상단 리스트 스와이프 */
 

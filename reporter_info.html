@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>기사콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <header id="header" class="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1 class="logo">
+                            <a href="">
+                                <span class="blind">기사콘</span>
+                                <img src="./images/common/logo.svg" alt="기사콘">
+                            </a>
+                        </h1>
+                        <div class="header_util">
+                            <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                            <!--로그아웃 상태-->
+                            <button type="button" class="btn_sign ty_logout">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그인</span>
+                            </button>
+                            <!--// 로그아웃 상태-->
+                            <!-- 로그인 상태-->
+                            <!--
+                            <button type="button" class="btn_sign ty_login">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그아웃</span>
+                            </button>
+                            -->
+                            <!--// 로그인 상태-->
+
+                            <!-- 햄버거버튼 삭제
+                            <button type="button" class="btn_lm">
+                                <span class="blind">전체메뉴</span>
+                                <div class="bar_box">
+                                    <span class="bar top"></span>
+                                    <span class="bar mid"></span>
+                                    <span class="bar bot"></span>
+                                </div>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_area">
+                    <nav id="nav" class="nav">
+                        <ul class="nav_list">
+                            <li class="on"><a href=""><span>기사</span></a></li>
+                            <li><a href=""><span>기자단</span></a></li>
+                            <li><a href=""><span>토론터</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id="container" class="sub_m ">
+                <div class="menu_dep2 ">
+                    <ul class="menu_dep2_list">
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link on">기자단 가입</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link ">기자단이란?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_wrap">
+                    <div class="sub_inner reporter_card_inner">
+                        <div class="reporter_card taC">
+                            <div class="reporter_card_logo">
+                                <img src="./images/common/logo_reporter.svg" alt="어린이과학동아&어린이수학동아 기자단">
+                            </div>
+                            <div class="reporter_card_thumb_area">
+                                <div class="reporter_card_thumb">
+                                    <div class="img_box">
+                                        <img src="./images/common/thumb_sample.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="reporter_card_id">
+                                <strong class="name ff_godoB">김영술</strong>
+                                <span class="logo"><img src="./images/common/logo_ds.svg" alt=""></span>
+                            </div>
+                            <div class="reporter_card_info">
+                                <p class="desc">위 사람은 어린이과학동아 기자단임을 증명함</p>
+                                <p class="period">유효기간 : 2022.01.15~2022.12.31</p>
+                                <p class="benefit">※ <b class="fc_key">어린이과학동아</b> 기자단증만 있으면 국내 박물관,  과학관을 무료 또는 할인 입장할 수 있어요.</p>
+                            </div>
+                        </div>
+                        <ul class="reporter_info_btns">
+                            <li>
+                                <a href="" class="reporter_info_btn">
+                                    <div class="ico_box"><img src="./images/ico/ico_my_setting.svg" alt=""></div>
+                                    <strong class="txt_box">내 정보 수정</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="reporter_info_btn">
+                                    <div class="ico_box"><img src="./images/ico/ico_spot.svg" alt=""></div>
+                                    <strong class="txt_box">취재처 확인</strong>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="caution_box">
+                            <strong class="caution_box_tit fc_key">※ 주의</strong>
+                            <ul>
+                                <li>① 정기구독번호 하나당 한 명만 <b class="fc_key">모바일 기자단증</b>을 받을 수 있어요.</li>
+                                <li>② 기자단증에 해당하는 어린이 <b class="fc_key">기자 본인만</b> 혜택을 받을 수 있어요.</li>
+                                <li>③ 무료입장은 상설전시관 기준이에요. (일부 제외)</li>
+                                <li>④ 사전 예약이 필수인 기관은 꼭 예약 후 방문해 주세요.</li>
+                                <li class="fc_key fwB">⑤ 모바일 기자단증을 매표소에 제시할 수 없으면, 취재처 입장이 불가능합니다. </li>
+                                <li class="fc_key fwB">⑥ 모바일 기자단증의 이름과 사진이 어린이 기자 본인과 일치하지 않는 경우는 입장이 취재처 불가능합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer id="footer" class="footer">
+                <ul class="footer_menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                </ul>
+                <div class="footer_policy">
+                    <h2 class="footer_policy_tit">
+                        <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                    </h2>
+                    <div class="txt_box">
+                        ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                        개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                        서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
+                    </div>
+                </div>
+                <p class="copy">Copyright © Dongascience. All right reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
