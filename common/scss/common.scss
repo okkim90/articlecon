@@ -206,7 +206,7 @@
                 font-weight: 500;
                 margin-bottom: 1px;
                 //line-height: 18px;
-                color: #5326a7;
+                color: map-get($colors, key);
             }
         }
     }
