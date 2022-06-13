@@ -101,9 +101,13 @@
             }
         }
     }
+
     &_txt {
         flex: 1;
         align-self: center;
+        @at-root .ty_as & {
+            align-self: flex-start;
+        }
         min-width: 0;
         padding-left: 10px;
         @at-root .ty_freeboard & {

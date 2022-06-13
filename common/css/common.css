@@ -585,6 +585,8 @@
 
 .pp_list_txt { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; min-width: 0; padding-left: 10px; }
 
+.ty_as .pp_list_txt { -ms-flex-item-align: start; align-self: flex-start; }
+
 .ty_freeboard .pp_list_txt { padding-left: 0; }
 
 .pp_list_txt .tit { font-size: 13px; line-height: 18px; max-height: 36px; letter-spacing: -0.13px; font-weight: 500; }

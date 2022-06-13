@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>플레이콘</title>
+    <title>기사콘</title>
     <!--스타일 공통-->
     <link rel="stylesheet" href="./common/css/common.css">
 
@@ -18,32 +18,74 @@
 </head>
 <body>
     <div id="wrap">
-        <div id="content" class="sub_m">
-            <header id="header" class="sub_header">
-                <a href="" class="btn_back"><span class="blind">뒤로가기</span></a>
-                <h1 class="tit"><span class="blind">어린이과학동아&수학동아</span> 연재만화</h1>
+        <div id="content">
+            <header id="header" class="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1 class="logo">
+                            <a href="">
+                                <span class="blind">기사콘</span>
+                                <img src="./images/common/logo.svg" alt="기사콘">
+                            </a>
+                        </h1>
+                        <div class="header_util">
+                            <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                            <!--로그아웃 상태-->
+                            <button type="button" class="btn_sign ty_logout">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그인</span>
+                            </button>
+                            <!--// 로그아웃 상태-->
+                            <!-- 로그인 상태-->
+                            <!--
+                            <button type="button" class="btn_sign ty_login">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그아웃</span>
+                            </button>
+                            -->
+                            <!--// 로그인 상태-->
+
+                            <!-- 햄버거버튼 삭제
+                            <button type="button" class="btn_lm">
+                                <span class="blind">전체메뉴</span>
+                                <div class="bar_box">
+                                    <span class="bar top"></span>
+                                    <span class="bar mid"></span>
+                                    <span class="bar bot"></span>
+                                </div>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_area">
+                    <nav id="nav" class="nav">
+                        <ul class="nav_list">
+                            <li><a href=""><span>기사</span></a></li>
+                            <li><a href=""><span>기자단</span></a></li>
+                            <li class="on"><a href=""><span>토론터</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
+
             <div id="container" class="sub_m">
-                <div class="sub_wrap pt0">
-                    <div class="vp_area sub_inner">
-                        <div class="vp_tit_area ty_webtoon">
-                            <strong class="vp_tit_sub">솔이와 옥희의 잃어버린 몸을 찾아서</strong>
-                            <h2 class="vp_tit">제 39화  ‘우울해! 슬퍼!’ 아린이가 이상해?</h2>
-                            <label class="btn_like_b">
-                                <input type="checkbox" class="btn_like_chk">
-                                <i class="ico_like"></i>
-                                <span class="blind">좋아요</span>
-                            </label>
-                        </div>
-                        <div class="vp_cont_area">
-                            <div class="vp_cont taC">
-                                <img src="./images/common/sample2.jpg" alt="">
-                                <img src="./images/common/sample.jpg" alt="">
-                                <img src="./images/common/sample3.jpg" alt="">
+                <div class="sub_wrap" >
+                    <div class="sub_inner">
+                        <div class="discussion_application_top">
+                            <div class="img_box taC">
+                                <img src="./images/common/dr_strange.png" alt="섭섭박사">
                             </div>
-                        </div>
-                        <div class="vp_btn_area taC">
-                            <button class="btn_epi_list" onclick="open_popup(this)" data-popup="popup_epi"><span>만화 목록 선택</span></button>
+                            <div class="txt_box">
+                                <h2 class="tit ff_godoB">다양한 토론주제를 신청해 주세요!</h2>
+                                <p>
+                                    정말로 친구들의 의견이 궁금한 토론 주제가 있나요? <br>
+                                    이제 혼자 고민하지 마세요. <br>
+                                    원하는 주제를 신청하면 섭섭박사가 직접 주제를 선정해 친구들과 토론 기회를 마련 해 준대요!
+                                </p>
+                                <strong class="fc_key">지금 바로 댓글로 신청해 주세요!</strong>
+                            </div>
                         </div>
                     </div>
                     <hr class="sep_bar">
@@ -51,21 +93,8 @@
 
                         <div class="write_comment">
                             <div class="comments_wrap_top">
-                                <span class="amount">댓글 <b class="fc_blue">14</b></span>
-                                <label class="sc_check no_drag"><input type="checkbox" onchange="check_pw(this)"> 비밀댓글</label>
-                                <input type="password" class="input_ty1 input_pw" style="display:none">
+                                <span class="amount">댓글 <b class="fc_key">14</b></span>
                             </div>
-                            <script>
-                                function check_pw(target){
-                                    var $this = $(target);
-                                    var $pw_box = $this.parents('.comments_wrap_top').find('.input_pw');
-                                    if($this.is(":checked")){
-                                        $pw_box.show();
-                                    }else{
-                                        $pw_box.hide();
-                                    }
-                                }
-                            </script>
                             <div class="txt_area">
                                 <textarea name="" id="" class="ta1" placeholder="내용을 입력하세요."></textarea>
                                 <div class="txt_area_bot">
@@ -675,224 +704,27 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- 만화 리스트 팝업 -->
-            <div class="layer_popup popup_epi">
-                <div class="layer_popup_inner">
-                    <div class="list_epi_wrap">
-                        <button class="close_popup" onclick="close_popup(this)"><span class="blind">팝업닫기</span></button>
-                        <ul class="list_epi">
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 1화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 2화 미안하다 이거 보여주려고 </p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 3화 미안하다</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li><li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li><li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 4화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 5화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 6화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 1화 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케 미안하다 이거 보여주려고 어그로끌었다 나루토 사스케</p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
-                            <li class="list_epi_item">
-                                <a href="" class="list_epi_link ">
-                                    <p class="tit ellipsis1">제 2화 미안하다 이거 보여주려고 </p>
-                                    <span class="info_co"><span class="blind">댓글수</span> 345<span class="blind">개</span></span>
-                                    <span class="ico_arrow"></span>
-                                </a>
-                            </li>
 
-                        </ul>
+            </div>
+            <footer id="footer" class="footer">
+                <ul class="footer_menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                </ul>
+                <div class="footer_policy">
+                    <h2 class="footer_policy_tit">
+                        <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                    </h2>
+                    <div class="txt_box">
+                        ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                        개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                        서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
                     </div>
-
                 </div>
-            </div>
-            <!-- //만화 리스트 팝업 -->
-        </div>
-
-    </div>
-    <!--
-        //audio_player
-        audio_player 클래스
-        노출, 비노출 : on
-        축소 : minimal
-        확장 : maximal
-    -->
-    <div class="audio_player maximal">
-        <div class="audio-player">
-            <!--
-            <div class="timeline">
-                <div class="progress"></div>
-            </div>
-            -->
-
-
-            <div class="full_tit">
-                <button class="btn_toggle_size btn_minimal" onclick="player_min();"><span class="blind">축소</span></button>
-                <h2 id="audio_tit" class="full_tit_txt ellipsis4">재생중인 오디오가 없습니다.</h2>
-            </div>
-            <div class="slider_wrap">
-                <div class="slider">
-
-                </div>
-            </div>
-
-            <div class="controls">
-                <div class="marquee_tit">
-                    <marquee id="marquee" >
-                        <div class="marquee_inner">
-                            재생중인 오디오가 없습니다.
-                        </div>
-                    </marquee>
-                </div >
-
-                <div class="time">
-                    <div class="current">0:00</div>
-                    <div class="length">0:00</div>
-                </div>
-
-
-                <div class="control_box">
-                    <button onclick="rewindAudio()" class="control_box_btns btn_rewind"><span class="blind">rewind</span><span class="sec">-15</span><span class="blind">sec</span></button>
-                    <div class="player_btn play"></div>
-                    <button onclick="forwardAudio()" class="control_box_btns btn_forward"><span class="blind">forward</span><span class="sec">+15</span><span class="blind">sec</span></button>
-                </div>
-                <div class="controls_bot">
-                    <div class="controls_bot_left">
-                        <div class="speed_ctrl">
-                            <strong class="blind">재생속도</strong>
-                            <select name="" id="" onchange="speed(this)">
-                                <option value="0.25">X 0.25</option>
-                                <option value="0.5">X 0.5</option>
-                                <option value="0.75">X 0.75</option>
-                                <option value="1" selected>X 1.00</option>
-                                <option value="1.25">X 1.25</option>
-                                <option value="1.5">X 1.5</option>
-                                <option value="1.75">X 1.75</option>
-                                <option value="2">X 2.00</option>
-                            </select>
-                        </div>
-                        <div class="volume-container">
-                            <div class="volume-slider">
-                                <div class="volume-percentage"></div>
-                            </div>
-                            <div class="volume-button">
-                                <i class="volume fa-solid fa-volume-high"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="" class="btn_article">기사 보러가기</a>
-                </div>
-                <button class="btn_toggle_size btn_maximal" onclick="player_max();">
-                    <span class="blind">확장</span>
-                </button>
-            </div>
-            <label class="btn_like">
-                <input type="checkbox" id="audio_like" class="btn_like_chk">
-                <i class="ico_like"></i>
-                <span class="blind">좋아요</span>
-            </label>
+                <p class="copy">Copyright © Dongascience. All right reserved.</p>
+            </footer>
         </div>
     </div>
-    <script src="./common/js/audio_ssok.js"></script>
-    <!-- //audio_player -->
 </body>
 </html>
