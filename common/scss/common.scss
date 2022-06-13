@@ -32,6 +32,15 @@
     text-decoration: underline;
 }
 
+.cursor {
+    &_default {
+        cursor: default;
+    }
+    &_pointer {
+        cursor: pointer;
+    }
+}
+
 #content {
     overflow: hidden;
     &.ty_sub {
@@ -1520,6 +1529,24 @@
     }
 }
 
+
+.caution_list2 {
+    li {
+        position: relative;
+        padding-left: 1.2em;
+        font-size: 12px;
+        line-height: 1.4;
+        &::before {
+            content: '※';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        & + li {
+            margin-top: 4px;
+        }
+    }
+}
 
 
 

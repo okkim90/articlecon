@@ -160,6 +160,7 @@ $(function(){
 
     //메인 파이차트+결과
     createChart();
+
 });
 
 
@@ -379,3 +380,6 @@ function createChart() {
 
     $('.main_discussion_result').html(result);
 }
+
+
+

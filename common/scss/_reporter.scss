@@ -205,3 +205,271 @@
         margin-top: 5px;
     }
 }
+
+
+.reporter_about_sec {
+    & ~ & {
+        padding-top: 40px;
+    }
+
+    &.greeting {
+        h2 {
+            font-size: 18px;
+            line-height: 1.5;
+            font-weight: normal;
+            strong {
+                font-size: 24px;
+
+            }
+        }
+        .img_box {
+            margin-top: 30px;
+        }
+    }
+    &.qna {
+        dt {
+            font-size: 16px;
+            line-height: 1.38;
+            letter-spacing: -.16px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        dd {
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: -.14px;
+            &  + dt {
+                margin-top: 40px;
+            }
+        }
+    }
+    .reporter_about_tit {
+        text-align: center;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 20px;
+            line-height: 1.4;
+            letter-spacing: -.2px;
+        }
+        .sub {
+            font-size: 14px;
+            line-height: 1.43;
+            letter-spacing: -.14px;
+            margin-top: 10px;
+        }
+    }
+
+    .reporter_benefit_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        li {
+            width: 25%;
+            text-align: center;
+            margin-top: 20px;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .benefit_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+            margin: 0 auto;
+            width: 110px;
+            height: 90px;
+            border: 2px solid map-get($colors, key);
+            box-sizing: border-box;
+            border-radius: 20px;
+            color: map-get($colors, key);
+            font-weight: bold;
+            font-family: 'Godo';
+            &_num {
+                font-size: 16px;
+                line-height: 1.6;
+                letter-spacing: -.16px;
+            }
+            &_tit {
+                font-size: 30px;
+                line-height: 1.2;
+                letter-spacing: -.3px;
+            }
+        }
+        .desc {
+            margin: 0 auto;
+            font-size: 13px;
+            line-height: 1.38;
+            letter-spacing: -.13px;
+            margin-top: 8px;
+            max-width: 200px;
+
+        }
+
+    }
+
+    .caution_list2 {
+        margin-top: 20px;
+    }
+
+    .spot_list {
+        margin: 0 -20px;
+        &_wrap {
+            margin-top: 30px;
+            .top_chk_area {
+                text-align: right;
+                margin-bottom: 20px;
+                .btn_list_open {
+                    display: inline-flex;
+                    align-items: center;
+                    vertical-align: top;
+                    font-size: 14px;
+                    line-height: 20px;
+                    .list_open_chk {
+                        margin: 0;
+                        margin-right: 4px;
+
+                    }
+                }
+            }
+        }
+
+
+        &_item {
+            border-top: 1px solid #f5f5f5;
+
+        }
+        &_cont {
+            display: none;
+            padding: 15px;
+            background-color: #fbfbfb;
+            border-top: 1px solid #f5f5f5;
+        }
+        .logo_list {
+            font-size: 0;
+            li {
+                display: inline-block;
+                vertical-align: top;
+                padding: 5px;
+                width: 33.33333%;
+                box-sizing: border-box;
+                a {
+                    display: block;
+                    border: 1px solid #f5f5f5;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &_tit {
+            padding: 0 20px;
+            position: relative;
+            .spot {
+                display: flex;
+                padding-left: 19px;
+                background-repeat: no-repeat;
+                background-position: 0 center;
+                background-image: url(../../images/ico/ico_loc.svg);
+                font-size: 16px;
+                line-height: 50px;
+                .count {
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-left: 6px;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+            &::after {
+                content:'';
+                position: absolute;
+                right: 20px;
+                top: 0;
+                margin-top: -2px;
+                width: 10px;
+                height: 100%;
+                background-image: url(../../images/ico/arrow_bot_b.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+
+                @at-root .spot_list_item.on .spot_list_tit::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+
+    &.id_card {
+        padding-bottom: 20px;
+        .tit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            img {
+                margin-right: 10px;
+            }
+        }
+        .step_list {
+            display: flex;
+            text-align: center;
+            margin-left: -10px;
+            margin-right: -10px;
+            li {
+                flex: 1;
+                flex-shrink: 0;
+                padding: 0 10px;
+                box-sizing: border-box;
+                & + li {
+                    border-left: 1px solid #e5e5e5;
+                }
+            }
+            .step_tit {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                color: map-get($colors, key);
+                span {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+                b {
+                    font-size: 18px;
+                    margin-left: 6px;
+                    line-height: 26px;
+                }
+            }
+            .desc {
+                font-size: 13px;
+                line-height: 1.38;
+                margin-top: 4px;
+                letter-spacing: -.2px;
+            }
+        }
+    }
+}
+
+
+@media (max-width:767px) {
+    .reporter_about_sec {
+        .reporter_benefit_list {
+            li {
+                width: 50%;
+            }
+        }
+        .spot_list {
+            .logo_list li {
+                width: 50%;
+            }
+        }
+    }
+}

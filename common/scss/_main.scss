@@ -977,6 +977,11 @@
     border-bottom: 1px solid #e5e5e5;
     background-color: #f5f5f5;
     box-sizing: border-box;
+    &.ty_hoz {
+        width: auto;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
 }
 
 

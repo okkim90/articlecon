@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>기사콘</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="content">
+            <header id="header" class="header">
+                <div class="header_top">
+                    <div class="header_top_inner">
+                        <h1 class="logo">
+                            <a href="">
+                                <span class="blind">기사콘</span>
+                                <img src="./images/common/logo.svg" alt="기사콘">
+                            </a>
+                        </h1>
+                        <div class="header_util">
+                            <a href="" class="btn_mypage"><span class="blind">마이페이지</span></a>
+
+                            <!--로그아웃 상태-->
+                            <button type="button" class="btn_sign ty_logout">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그인</span>
+                            </button>
+                            <!--// 로그아웃 상태-->
+                            <!-- 로그인 상태-->
+                            <!--
+                            <button type="button" class="btn_sign ty_login">
+                                <i class="btn_sign_ico"></i>
+                                <span class="btn_sign_txt">로그아웃</span>
+                            </button>
+                            -->
+                            <!--// 로그인 상태-->
+
+                            <!-- 햄버거버튼 삭제
+                            <button type="button" class="btn_lm">
+                                <span class="blind">전체메뉴</span>
+                                <div class="bar_box">
+                                    <span class="bar top"></span>
+                                    <span class="bar mid"></span>
+                                    <span class="bar bot"></span>
+                                </div>
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_area">
+                    <nav id="nav" class="nav">
+                        <ul class="nav_list">
+                            <li class="on"><a href=""><span>기사</span></a></li>
+                            <li><a href=""><span>기자단</span></a></li>
+                            <li><a href=""><span>토론터</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div id="container" class="sub_m ">
+                <div class="menu_dep2 ">
+                    <ul class="menu_dep2_list">
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link ">기자단 가입</a>
+                        </li>
+                        <li class="menu_dep2_item">
+                            <a href="" class="menu_dep2_link on">기자단이란?</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sub_wrap">
+                    <div class="sub_inner">
+                        <div class="reporter_about_sec greeting">
+                            <h2>
+                                학교 밖 다양한 체험이 필요한 친구들! <br>
+                                <strong class="ff_godoB"><span class="fc_key">어과수 기자단</span>으로 모여라~!</strong>
+                            </h2>
+                            <div class="img_box taC">
+                                <img src="./images/reporter/reporter_about_img1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="reporter_about_sec qna">
+                            <h2 class="blind">어과수 기자단 Q&A</h2>
+                            <dl>
+                                <dt><b class="fc_key">Q</b> 기자단은 <b class="fc_key">누가</b> 활동하나요?</dt>
+                                <dd>
+                                    정기구독자는 누구나 <b class="fc_key">어과수 (어린이과학동아, 어린이수학동아)</b>  기자단에 가입할 수 있어요! 주로 탐구심이 많고, 과학과 수학을 좋아하는 친구들이 활동하고 있답니다.
+                                </dd>
+                                <dt><b class="fc_key">Q</b> 기자단은 <b class="fc_key">왜</b> 해야 하나요?</dt>
+                                <dd>
+                                    &lt;어린이과학동아, 어린이수학동아&gt; 로 지식을 쌓았다면, 기자단 활동으로 다양한 현장 체험을 할 수 있어요. 또 국내외 유명 과학자를 직접 만나볼 수도 있답니다. <br><br>
+                                    이렇게 스스로 ‘기자’가 되어 취재하고, 기사도 작성해 보세요. <b>글쓰기 능력을 키울 수 있는 것은 물론, 미래의 진로를 탐색하는 시간이 될 거예요.</b>
+                                </dd>
+                                <dt><b class="fc_key">Q</b> 기자단의 <b class="fc_key">특별한 혜택</b>이 무엇인가요?</dt>
+                                <dd>
+                                    취재처 탐방 또는 여러 주제로 어린이과학동아, 어린이수학동아  홈페이지에 기사를 작성하면, 현직 기자에게 글쓰기 첨삭을 받을 수 있어요. <br><br>
+                                    ‘우수기사’로 선발되면 &lt;어린이과학동아, 어린이수학동아&gt; 지면에도 소개되고, 우수 상장과 선물도 받아요. <br><br>
+                                    내가 작성한 기사는 ‘포트폴리오’에 차곡차곡 쌓이니 학교에 제출하기도 참 좋겠죠?
+                                </dd>
+                            </dl>
+                            <div class="img_box">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                        <div class="reporter_about_sec benefit">
+                            <div class="reporter_about_tit">
+                                <h2 class="ff_godoB">어린이과학동아 기자단 <span class="fc_key">혜택</span></h2>
+                                <p class="sub">어린이과학동아, 어린이수학동아는 누구나 어과수 기자단에 가입할 수 있어요! <br> 주로 탐구심이 많고, 과학을 좋아하는 친구들이 활동하고 있답니다.</p>
+                            </div>
+                            <ul class="reporter_benefit_list">
+                                <li>
+                                    <div class="benefit_box">
+                                        <span class="benefit_box_num">혜택1</span>
+                                        <strong class="benefit_box_tit">82개</strong>
+                                    </div>
+                                    <p class="desc">전국 주요 과학관 무료, 할인입장</p>
+                                </li>
+                                <li>
+                                    <div class="benefit_box">
+                                        <span class="benefit_box_num">혜택2</span>
+                                        <strong class="benefit_box_tit">첨삭</strong>
+                                    </div>
+                                    <p class="desc">현직 기자의 글쓰기 지도 & ‘이달의 우수기자상’ 선발</p>
+                                </li>
+                                <li>
+                                    <div class="benefit_box">
+                                        <span class="benefit_box_num">혜택3</span>
+                                        <strong class="benefit_box_tit">취재</strong>
+                                    </div>
+                                    <p class="desc">'출동! 기자단', '섭섭박사의 메이커 스쿨' 등 다양한 현장 취재</p>
+                                </li>
+                                <li>
+                                    <div class="benefit_box">
+                                        <span class="benefit_box_num">혜택4</span>
+                                        <strong class="benefit_box_tit">체험</strong>
+                                    </div>
+                                    <p class="desc">전시, 시사회 등 신나는 행사 참여</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="reporter_about_sec spot">
+                            <div class="reporter_about_tit">
+                                <h2 class="ff_godoB">어과수 기자단 <span class="fc_key">취재처</span></h2>
+                                <p class="sub">모바일 기자단증만 있으면 국내 82개 박물관, 과학관을 무료 또는 할인 입장할 수 있어요.</p>
+                            </div>
+                            <div class="caution_box">
+                                <strong class="caution_box_tit fc_key">※ 주의</strong>
+                                <ul>
+                                    <li>① 정기구독번호 하나당 한 명만 <b class="fc_key">모바일 기자단증</b>을 받을 수 있어요.</li>
+                                    <li>② 기자단증에 해당하는 어린이 <b class="fc_key">기자 본인만</b> 혜택을 받을 수 있어요.</li>
+                                    <li>③ 무료입장은 상설전시관 기준이에요. (일부 제외)</li>
+                                    <li>④ 사전 예약이 필수인 기관은 꼭 예약 후 방문해 주세요.</li>
+                                    <li class="fc_key fwB">⑤ 모바일 기자단증을 매표소에 제시할 수 없으면, 취재처 입장이 불가능합니다. </li>
+                                    <li class="fc_key fwB">⑥ 모바일 기자단증의 이름과 사진이 어린이 기자 본인과 일치하지 않는 경우는 입장이 취재처 불가능합니다.</li>
+                                </ul>
+                            </div>
+                            <ul class="caution_list2">
+                                <li>아래의 취재처는 2021년도 1월 1일부터 이용 가능합니다.</li>
+                                <li>취재 지원 취재처는 입장료가 없는 곳으로 큐레이터의 설명 혜택이 있어요.</li>
+                                <li class="fc_key">취재처 방문 전, 휴관 일정을 꼭 확인해주세요!</li>
+                                <li class="fc_key">어린이과학동아와 어린이수학동아 정기구독자의 무료 혹은 할인이 지원되는 취재처가 다르니, 꼭 확인해주세요!</li>
+                            </ul>
+                            <div class="spot_list_wrap">
+                                <div class="top_chk_area">
+                                    <label class="btn_list_open  cursor_pointer no_drag"><input type="checkbox" class="list_open_chk"> 한번에 펼쳐보기</label>
+                                </div>
+                                <ul class="spot_list">
+                                    <li class="spot_list_item on">
+                                        <div class="spot_list_tit cursor_pointer no_drag">
+                                            <strong class="spot">서울 <span class="count">17곳</span></strong>
+                                        </div>
+                                        <ul class="spot_list_cont logo_list" style="display: block;">
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="spot_list_item">
+                                        <div class="spot_list_tit cursor_pointer no_drag">
+                                            <strong class="spot">인천 <span class="count">23곳</span></strong>
+                                        </div>
+                                        <ul class="spot_list_cont logo_list">
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="spot_list_item">
+                                        <div class="spot_list_tit cursor_pointer no_drag">
+                                            <strong class="spot">강원 <span class="count">23곳</span></strong>
+                                        </div>
+                                        <ul class="spot_list_cont logo_list">
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="spot_list_item">
+                                        <div class="spot_list_tit cursor_pointer no_drag">
+                                            <strong class="spot">대전 <span class="count">23곳</span></strong>
+                                        </div>
+                                        <ul class="spot_list_cont logo_list">
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="spot_list_item">
+                                        <div class="spot_list_tit cursor_pointer no_drag">
+                                            <strong class="spot">대구 <span class="count">23곳</span></strong>
+                                        </div>
+                                        <ul class="spot_list_cont logo_list">
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://mkids.dongascience.com/upload/newsOutlet/9657908cdbd3b8c5242cabc2b93f8c4e.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="logo_list_item">
+                                                <a href="">
+                                                    <img src="https://img.dongascience.com/kids2016/mobile/images/presscorps/benefit/m01.jpg" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr class="sep_bar ty_hoz">
+                        <div class="reporter_about_sec id_card">
+                            <div class="tit ff_godoB"><img src="./images/ico/ico_benefit_idcard.svg" alt=""> <strong><span class="fc_key">기자증</span> 받기</strong></div>
+                            <ol class="step_list">
+                                <li>
+                                    <div class="step_tit ff_godoB">
+                                        <span>STEP</span>
+                                        <b>01</b>
+                                    </div>
+                                    <div class="desc">
+                                        팝콘플래닛 회원가입
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="step_tit ff_godoB">
+                                        <span>STEP</span>
+                                        <b>02</b>
+                                    </div>
+                                    <div class="desc">
+                                        로그인 후 정기구독 회원 인증
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="step_tit ff_godoB">
+                                        <span>STEP</span>
+                                        <b>03</b>
+                                    </div>
+                                    <div class="desc">
+                                        기사콘 기자단 가입
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer id="footer" class="footer">
+                <ul class="footer_menu">
+                    <li><a href="">회사소개</a></li>
+                    <li><a href="">광고안내</a></li>
+                    <li><a href="">개인정보취급방침</a></li>
+                </ul>
+                <div class="footer_policy">
+                    <h2 class="footer_policy_tit">
+                        <button type="button" class="btn_policy">㈜동아사이언스 키즈 플랫폼 <i></i></button>
+                    </h2>
+                    <div class="txt_box">
+                        ㈜동아사이언스 팝콘플래닛, 스토리콘 | 대표 : 장경애 <br>
+                        개인정보관리책임자 : <span>김수희 (privacy@dongascience.com) |</span> <span>청소년보호책임자 : 조기견</span> <br><br>
+                        서울시 용산구 청파로 109, 7층 (04370) | 문의 : 02-6749-2000 ｜팩스 : 02-3148-0789  사업자등록번호 : 101-81-62201 (사업자정보확인) | 통신판매업신고번호 : 제2013-서울용산-01101호 | 온라인 결제를 위한 PG사의 구매안전서비스(가입사실 확인)
+                    </div>
+                </div>
+                <p class="copy">Copyright © Dongascience. All right reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.spot_list_tit').on('click',function(){
+                let $item = $(this).parents('.spot_list_item');
+                let $cont = $item.find('.spot_list_cont');
+                if($item.hasClass('on')){
+                    $item.removeClass('on');
+                    $cont.slideUp(200);
+
+                    $('.list_open_chk').prop('checked',false);
+
+                }else{
+                    $item.addClass('on');
+                    $cont.slideDown(200);
+                }
+            });
+
+            $('.list_open_chk').on('change',function(){
+                if($(this).is(":checked")){
+                    $('.spot_list_item').each(function(){
+                        $(this).not('on')
+                        .addClass('on')
+                        .find('.spot_list_cont')
+                        .slideDown(200);
+                    });
+                    $('.spot_list_item').each(function(){
+                        $(this).not('on')
+                        .addClass('on')
+                        .find('.spot_list_cont')
+                        .slideDown(200);
+                    });
+                }else{
+                    $('.spot_list_item')
+                    .removeClass('on')
+                    .find('.spot_list_cont')
+                    .slideUp(200);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
